@@ -159,8 +159,8 @@
     const sz = state.map.getSize();
     if ((sz.x < 50 || sz.y < 50) && tries < 20) { setTimeout(() => fitMap(pts, tries + 1), 250); return; }
     state.fitting = true;
-    state.map.fitBounds(pts, { padding: [30, 30], maxZoom: 7 });
-    setTimeout(() => { state.fitting = false; }, 600);
+    state.map.fitBounds(pts, { padding: [30, 30], maxZoom: 7, animate: false });   // an animated fit can stall if the page is still resizing
+    setTimeout(() => { state.fitting = false; }, 300);
   }
   function render() {
     const rs = rows();
