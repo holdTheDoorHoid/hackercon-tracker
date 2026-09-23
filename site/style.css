@@ -45,5 +45,5 @@ main{padding:0 22px 40px}
 .backdrop{position:fixed;inset:0;background:rgba(0,0,0,.28);z-index:999}.backdrop[hidden]{display:none}
 footer{padding:18px 22px 30px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);line-height:1.6}
 .leaflet-popup-content{font:14px/1.4 system-ui,sans-serif}
-@media (prefers-color-scheme:dark){.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--card);color:var(--text)}.leaflet-control-attribution{background:rgba(24,28,37,.8);color:var(--muted)}}
+@media (prefers-color-scheme:dark){.leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.9) saturate(.6)}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--card);color:var(--text)}.leaflet-control-attribution{background:rgba(24,28,37,.8);color:var(--muted)}}
 @media (max-width:640px){header.top{padding:12px 14px}nav.views,.filters,main{padding-left:12px;padding-right:12px}.filters input[type=search]{min-width:0;width:100%}.home input{min-width:150px}}

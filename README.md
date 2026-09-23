@@ -153,7 +153,7 @@ list; day to day, `refresh.py` is enough.
 Nothing leaves your computer except the requests the refresh makes to the public feeds
 and conference websites, the optional Gmail sync, and one geocoding request to
 OpenStreetMap's Nominatim if your home city isn't in the built-in table. The public
-site has no analytics; the map tiles come from CARTO/OpenStreetMap.
+site has no analytics; the map tiles come from OpenStreetMap.
 
 ## License
 

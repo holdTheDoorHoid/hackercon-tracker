@@ -129,11 +129,9 @@
   }
   function renderMap(rs) {
     if (!state.map) {
-      const dark = matchMedia("(prefers-color-scheme: dark)").matches;
       state.map = L.map("leaflet", { scrollWheelZoom: true }).setView([39, -96], 4);
-      L.tileLayer(`https://{s}.basemaps.cartocdn.com/${dark ? "dark_all" : "light_all"}/{z}/{x}/{y}{r}.png`, {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: "abcd", maxZoom: 18 }).addTo(state.map);
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 18 }).addTo(state.map);
       state.layer = L.layerGroup().addTo(state.map);
     }
     state.layer.clearLayers();
