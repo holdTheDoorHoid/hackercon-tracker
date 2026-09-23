@@ -133,8 +133,13 @@
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 18 }).addTo(state.map);
       state.layer = L.layerGroup().addTo(state.map);
+      state.map.on("dragstart", () => { state.userMoved = true; });
+      state.map.on("zoomstart", () => { if (!state.fitting) state.userMoved = true; });
+      let t = null;   // late layout changes (mobile address bar, embedded panes): refit unless the visitor already moved the map
+      window.addEventListener("resize", () => { clearTimeout(t); t = setTimeout(() => { if (state.view === "map" && !state.userMoved) fitMap(state.pts || []); }, 200); });
     }
     state.layer.clearLayers();
+    state.userMoved = false;
     const pts = [];
     for (const { c, ed, tr } of rs) {
       if (c.lat == null) continue;
@@ -143,6 +148,7 @@
       state.layer.addLayer(m); pts.push([c.lat, c.lon]);
     }
     if (state.home) state.layer.addLayer(L.circleMarker([state.home.lat, state.home.lon], { radius: 9, color: "#222", weight: 2, fillColor: "#ffd43b", fillOpacity: 1 }).bindTooltip("Home: " + state.home.label));
+    state.pts = pts;
     setTimeout(() => fitMap(pts), 30);
   }
   function fitMap(pts, tries = 0) {
@@ -152,7 +158,9 @@
     state.map.invalidateSize();
     const sz = state.map.getSize();
     if ((sz.x < 50 || sz.y < 50) && tries < 20) { setTimeout(() => fitMap(pts, tries + 1), 250); return; }
+    state.fitting = true;
     state.map.fitBounds(pts, { padding: [30, 30], maxZoom: 7 });
+    setTimeout(() => { state.fitting = false; }, 600);
   }
   function render() {
     const rs = rows();
