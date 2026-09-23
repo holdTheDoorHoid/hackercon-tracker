@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Hackercon Tracker{% endblock %}</title>
+<link rel="stylesheet" href="/static/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎪</text></svg>">
+{% block head %}{% endblock %}
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">🎪 <span>Hackercon Tracker</span></a>
+  <nav>
+    <a href="/" class="{{ 'active' if request.url.path == '/' }}">Dashboard</a>
+    <a href="/conferences" class="{{ 'active' if request.url.path.startswith('/conferences') }}">Conferences</a>
+    <a href="/calendar" class="{{ 'active' if request.url.path.startswith('/calendar') }}">Calendar</a>
+    <a href="/conflicts" class="{{ 'active' if request.url.path.startswith('/conflicts') or request.url.path.startswith('/compare') }}">Conflicts</a>
+    <a href="/email" class="{{ 'active' if request.url.path.startswith('/email') }}">Email</a>
+    <a href="/settings" class="{{ 'active' if request.url.path.startswith('/settings') }}">Settings</a>
+  </nav>
+  <form class="search" action="/conferences" method="get"><input type="search" name="q" placeholder="Find a con…" value="{{ request.query_params.get('q','') }}"></form>
+  <a class="btn primary" href="/conferences/new">+ Add</a>
+  <a class="pill {{ 'ok' if gmail.connected else 'warn' }}" href="/settings#gmail" title="Gmail status">{{ '✉ ' + gmail.email if gmail.connected else '✉ sample mode' }}</a>
+</header>
+{% if msg %}<div class="flash ok">{{ msg }}</div>{% endif %}
+{% if err %}<div class="flash err">{{ err }}</div>{% endif %}
+<main>
+{% block content %}{% endblock %}
+</main>
+<footer>
+  <span>Home base: {% if settings.home_lat %}{{ settings.home_label }}{% else %}<a href="/settings#scoring">not set</a>{% endif %}</span> ·
+  <a href="/export/xlsx">Download spreadsheet</a> ·
+  <a href="/export/ics">Calendar file (.ics)</a> ·
+  <a href="/api/conferences.json">JSON</a>
+</footer>
+<script src="/static/app.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

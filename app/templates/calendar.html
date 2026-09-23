@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Calendar · Hackercon Tracker{% endblock %}
+{% block head %}<script src="/static/vendor/fullcalendar.min.js"></script>{% endblock %}
+{% block content %}
+<section class="card">
+  <div class="cal-controls">
+    <label class="chk"><input type="checkbox" id="showDeadlines" checked> show deadlines</label>
+    <label class="chk"><input type="checkbox" id="onlyMine"> only ones we're applied / going to</label>
+    <label>hide scores below <input type="range" id="minScore" min="0" max="80" value="0" step="5"> <span id="minScoreVal">0</span></label>
+    <span class="legend"><i style="background:#2e7d32"></i>accepted / attending <i style="background:#1565c0"></i>applied <i style="background:#6d5aa8"></i>considering <i style="background:#9e9e9e"></i>declined / skipped <i style="background:#e65100"></i>deadline</span>
+    <a class="btn small ghost" href="/export/ics">Subscribe (.ics)</a>
+  </div>
+  <div id="calendar"></div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+const el = document.getElementById('calendar');
+const cal = new FullCalendar.Calendar(el, {
+  initialView: window.innerWidth < 700 ? 'listMonth' : 'dayGridMonth',
+  headerToolbar: { left: 'prev,next today', center: 'title', right: 'dayGridMonth,listMonth,multiMonthYear' },
+  firstDay: 1, height: 'auto', dayMaxEvents: 4, weekNumbers: false,
+  events: function(info, ok, fail) {
+    const p = new URLSearchParams({ start: info.startStr, end: info.endStr,
+      deadlines: document.getElementById('showDeadlines').checked ? '1' : '0',
+      mine: document.getElementById('onlyMine').checked ? '1' : '',
+      min_score: document.getElementById('minScore').value });
+    fetch('/api/calendar.json?' + p).then(r => r.json()).then(ok).catch(fail);
+  },
+  eventDidMount: function(a) {
+    const x = a.event.extendedProps;
+    if (x.kind === 'event') a.el.title = (x.place || '') + ' · score ' + x.score + ' · ' + (x.status || '') + (x.dates_status && x.dates_status !== 'confirmed' && x.dates_status !== 'announced' ? ' · dates ' + x.dates_status : '');
+  }
+});
+cal.render();
+for (const id of ['showDeadlines', 'onlyMine', 'minScore']) document.getElementById(id).addEventListener('input', () => { document.getElementById('minScoreVal').textContent = document.getElementById('minScore').value; cal.refetchEvents(); });
+</script>
+{% endblock %}

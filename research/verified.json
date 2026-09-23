@@ -1,0 +1,3534 @@
+{
+ "bsides-delaware": {
+  "name": "BSides Delaware",
+  "website": "https://www.bsidesdelaware.com/",
+  "city": "Newark",
+  "region": "DE",
+  "country": "US",
+  "aliases": [
+   "BSidesDE",
+   "BSidesDelaware",
+   "bsides delaware"
+  ],
+  "contact_email": "katina@udel.edu",
+  "twitter": "@BSidesDE",
+  "mastodon": "https://infosec.exchange/@BSidesDE",
+  "sponsor_url": "https://www.bsidesdelaware.com/sponsor/",
+  "village_hosting": "yes",
+  "typical_month": 11,
+  "description": "Two days of talks, hands-on villages, CTF and a kids' track at UD's STAR Campus.",
+  "verification_notes": "Dates from bsides.org + humanitix listing (Nov 13-14, 2026, FinTech Building, STAR Campus). 17th edition.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-13",
+    "end_date": "2026-11-14",
+    "dates_status": "announced",
+    "venue": "FinTech Building, STAR Campus, 591 Collaboration Way, Newark DE",
+    "url": "https://events.humanitix.com/security-bsides-delaware-2026"
+   }
+  ],
+  "cfp_email": "cfp@bsidesdelaware.com",
+  "sponsor_email": "sponsor@bsidesdelaware.com"
+ },
+ "counterspy": {
+  "name": "Counter Spy Conference",
+  "website": "https://counterspy.zip/",
+  "city": "Atlanta",
+  "region": "GA",
+  "country": "US",
+  "typical_month": 5,
+  "verification_notes": "counterspy.zip confirms May 1-3, 2026.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-01",
+    "end_date": "2026-05-03",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "ozcon": {
+  "name": "OzCon",
+  "website": "https://theozcon.com/",
+  "city": "Overland Park",
+  "region": "KS",
+  "country": "US",
+  "type": "industry",
+  "typical_month": 5,
+  "description": "One-day practitioner event at the Overland Park Marriott; threat-intel and response focus.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-18",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Overland Park Marriott Conference Center"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-05-17",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "contact_email": "wizard@theozcon.com"
+ },
+ "big-sky-cyber-summit": {
+  "name": "Big Sky Cyber Summit",
+  "website": "https://www.lmgsecurity.com/big-sky-cyber-summit-2026/",
+  "city": "Missoula",
+  "region": "MT",
+  "country": "US",
+  "type": "industry",
+  "typical_month": 5,
+  "vending_policy": "no",
+  "vending_notes": "Organizers (LMG Security) say it is 'not a vendor expo'.",
+  "description": "One-day summit for practitioners and public-sector partners; inaugural 2026.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-28",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "145 West Front Street, Missoula"
+   }
+  ]
+ },
+ "boardwalk-bytes": {
+  "name": "Boardwalk Bytes",
+  "website": "https://boardwalkbytes.org/",
+  "city": "Atlantic City",
+  "region": "NJ",
+  "country": "US",
+  "typical_month": 7,
+  "ticket_price": "$110",
+  "village_hosting": "yes",
+  "description": "Low-cost one-day infosec con at Bally's Atlantic City with learning villages; 3rd year in 2026.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-07-10",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Bally's Atlantic City",
+    "url": "https://www.eventbrite.com/e/boardwalk-bytes-information-security-conference-tickets-1974535958204"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-07-10",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "contact_email": "info@boardwalkbytes.org"
+ },
+ "bsides-albany": {
+  "name": "BSides Albany",
+  "website": "https://bsidesalbany.org/",
+  "city": "Albany",
+  "region": "NY",
+  "country": "US",
+  "typical_month": 6,
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-06",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "ETEC Building, University at Albany",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-03-31",
+      "status": "closed"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "BSidesAlbany"
+  ]
+ },
+ "bsides-birmingham": {
+  "name": "BSides Birmingham (UK)",
+  "website": "https://www.bsidesbrum.com/",
+  "city": "Birmingham",
+  "region": null,
+  "country": "GB",
+  "aliases": [
+   "BSides Brum",
+   "BSides Birmingham"
+  ],
+  "typical_month": 5,
+  "sponsor_docs_url": "https://static1.squarespace.com/static/674d231d4acc783fd1d6ea7e/t/6939b794936067522ebb86ea/1765390228335/BSides+Birmingham+2026+Sponsor+Pack.pdf",
+  "verification_notes": "Your sheet's May 16, 2026 / ~250 people entry matches the UK event (Aston Students Union). Birmingham, Alabama's BSidesBHAM appears dormant since 2024.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-16",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Aston Students Union, Birmingham UK"
+   }
+  ]
+ },
+ "hack-glasgow": {
+  "name": "Hack Glasgow",
+  "website": "https://hackglasgow.live/",
+  "city": "Glasgow",
+  "region": null,
+  "country": "GB",
+  "typical_month": 8,
+  "attendance_est": 300,
+  "ticket_price": "£20",
+  "village_hosting": "yes",
+  "twitter": "@Hack_Glasgow",
+  "description": "Community hacker con at the Citizens Theatre: two tracks, villages, sponsor area, afterparty.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-08-15",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Citizens Theatre, Gorbals"
+   }
+  ]
+ },
+ "vcf-southeast": {
+  "name": "Vintage Computer Festival Southeast",
+  "website": "https://vcfed.org/events/otherevents/vintage-computer-festival-southeast/",
+  "city": "Atlanta",
+  "region": "GA",
+  "country": "US",
+  "type": "hardware",
+  "typical_month": 7,
+  "verification_notes": "2027 dates (July 16-18) announced alongside Southern-Fried Gaming Expo per gameatl.com.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-07-31",
+    "end_date": "2026-08-02",
+    "dates_status": "announced",
+    "venue": "Marriott Renaissance Waverly, Atlanta"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-07-16",
+    "end_date": "2027-07-18",
+    "dates_status": "announced",
+    "url": "https://gameatl.com/vintage-computing-festival-southeast/"
+   }
+  ]
+ },
+ "bsides-vancouver": {
+  "name": "BSides Vancouver",
+  "website": "https://www.bsidesvancouver.com/",
+  "city": "Vancouver",
+  "region": "BC",
+  "country": "CA",
+  "typical_month": 5,
+  "twitter": "@BSidesVancouver",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-31",
+    "end_date": "2026-06-01",
+    "dates_status": "announced",
+    "url": "https://bsidesvancouver2026.sched.com/"
+   }
+  ],
+  "sponsor_email": "sponsor@fourthplanet.ca",
+  "aliases": [
+   "BSidesVancouver"
+  ]
+ },
+ "bsides-houston": {
+  "name": "BSides Houston",
+  "website": "https://houstonbsides.org/",
+  "city": "Houston",
+  "region": "TX",
+  "country": "US",
+  "typical_month": 9,
+  "ticket_price": "~$54",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-17",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Houston Food Bank Conference Center, 535 Portwall St",
+    "url": "https://www.simpletix.com/e/bsides-houston-2026-tickets-283554",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-08-15",
+      "status": "closed"
+     }
+    ]
+   }
+  ],
+  "cfp_email": "cfp@houstonbsides.org",
+  "contact_email": "info@houstonbsides.org",
+  "aliases": [
+   "BSidesHouston"
+  ]
+ },
+ "bsides-vi": {
+  "name": "BSides Vancouver Island",
+  "website": "https://www.bsidesvi.com/",
+  "city": "Victoria",
+  "region": "BC",
+  "country": "CA",
+  "typical_month": 9,
+  "aliases": [
+   "BSidesVI"
+  ],
+  "mastodon": "https://infosec.exchange/@BSidesVI",
+  "instagram": "https://www.instagram.com/bsidesvi/",
+  "youtube": "https://www.youtube.com/@BSidesVancouverIsland",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-25",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Victoria Conference Centre",
+    "url": "https://www.eventbrite.ca/e/bsides-vancouver-island-2026-tickets-1992328052838"
+   }
+  ],
+  "contact_email": "info@bsidesvi.com"
+ },
+ "bsides-saskatoon": {
+  "name": "BSides YXE (Saskatoon)",
+  "website": "https://bsidesyxe.ca/",
+  "city": "Saskatoon",
+  "region": "SK",
+  "country": "CA",
+  "typical_month": 9,
+  "aliases": [
+   "BSides Saskatoon",
+   "BSidesSaskatoon",
+   "BSidesYXE"
+  ],
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-28",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "The Glenn at Crossmount",
+    "url": "https://www.eventbrite.ca/e/bsides-yxe-2026-tickets-1986358515792"
+   }
+  ],
+  "sponsor_email": "sponsors@bsidesyxe.ca"
+ },
+ "bsides-hampton-roads": {
+  "name": "BSides Hampton Roads",
+  "website": "https://bsideshamptonroads.org/",
+  "city": "Norfolk",
+  "region": "VA",
+  "country": "US",
+  "typical_month": 10,
+  "description": "Inaugural 2026 event at ODU's Webb University Center.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-09",
+    "end_date": "2026-10-10",
+    "dates_status": "announced",
+    "venue": "ODU Webb University Center"
+   }
+  ],
+  "aliases": [
+   "BSidesHamptonRoads"
+  ]
+ },
+ "bsides-peoria": {
+  "name": "BSides Peoria",
+  "website": "https://bsidespeoria.com/",
+  "city": "Peoria",
+  "region": "IL",
+  "country": "US",
+  "typical_month": 10,
+  "twitter": "@bsidespeoria",
+  "cfp_url": "https://sessionize.com/bsides-peoria-2026/",
+  "sponsor_url": "https://bsidespeoria.com/call-for-sponsors-bsides-peoria-2026/",
+  "village_hosting": "yes",
+  "ticket_price": "$40 early bird",
+  "description": "One-day con at Bradley University with four villages (Ham Radio/RF, Human Hacking, CTF, Physical Security) and competitions.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-24",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Bradley University",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-08-31",
+      "status": "closed",
+      "url": "https://sessionize.com/bsides-peoria-2026/"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "BSidesPeoria"
+  ]
+ },
+ "bsides-columbus": {
+  "name": "BSides Columbus",
+  "website": "https://www.bsidescolumbus.com/",
+  "city": "Canal Winchester",
+  "region": "OH",
+  "country": "US",
+  "typical_month": 11,
+  "aliases": [
+   "BSidesCMH",
+   "BSidesColumbus"
+  ],
+  "twitter": "@BSidesColumbus",
+  "linkedin": "https://www.linkedin.com/company/bsidescolumbus",
+  "cfp_url": "https://sessionize.com/2026-bsides-columbus",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-04",
+    "end_date": "2026-11-06",
+    "dates_status": "announced",
+    "venue": "BrewDog DogTap, Canal Winchester OH"
+   }
+  ],
+  "contact_email": "info@bsidescolumbus.com"
+ },
+ "bsides-flood-city": {
+  "name": "BSides Flood City",
+  "website": "https://www.bsidesfloodcity.com/",
+  "city": "Johnstown",
+  "region": "PA",
+  "country": "US",
+  "typical_month": 11,
+  "twitter": "@bsidesfc",
+  "description": "Volunteer-run one-day con at Pennsylvania Highlands Community College.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-12",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Pennsylvania Highlands Community College",
+    "url": "https://www.tickettailor.com/events/bsidesfloodcity"
+   }
+  ],
+  "contact_email": "bsidesfloodcity@gmail.com",
+  "aliases": [
+   "BSidesFloodCity"
+  ]
+ },
+ "bsides-space-coast": {
+  "name": "BSides Space Coast",
+  "website": "https://bsidesspacecoast.com/",
+  "city": "Melbourne",
+  "region": "FL",
+  "country": "US",
+  "typical_month": 3,
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-03-13",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Eastern Florida State College, CITE Building 17"
+   }
+  ],
+  "aliases": [
+   "BSidesSpaceCoast"
+  ]
+ },
+ "bsides-nola": {
+  "name": "BSides NOLA",
+  "website": "https://nolabsides.com/",
+  "city": "New Orleans",
+  "region": "LA",
+  "country": "US",
+  "typical_month": 5,
+  "village_hosting": "yes",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-12",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "InterContinental New Orleans, 444 St Charles Ave"
+   }
+  ],
+  "aliases": [
+   "BSides NOLA",
+   "BSidesNOLA"
+  ]
+ },
+ "bsides-atlanta": {
+  "name": "BSides Atlanta",
+  "website": "https://bsidesatl.info/",
+  "city": "Atlanta",
+  "region": "GA",
+  "country": "US",
+  "typical_month": 10,
+  "aliases": [
+   "BSides Atlanta",
+   "BSidesATL",
+   "BSidesAtlanta"
+  ],
+  "twitter": "@bsidesatl",
+  "linkedin": "https://www.linkedin.com/company/bsidesatl",
+  "ticket_price": "$50 early / $55",
+  "village_hosting": "yes",
+  "description": "14th annual; Georgia Tech Hotel & Conference Center, 13 content areas incl. villages.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-03",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Georgia Tech Hotel & Conference Center",
+    "url": "https://ti.to/bsidesatl/2026"
+   }
+  ]
+ },
+ "bsides-bozeman": {
+  "name": "BSides Bozeman",
+  "website": "https://www.zeffy.com/en-US/ticketing/bsides-bozeman",
+  "city": "Bozeman",
+  "region": "MT",
+  "country": "US",
+  "typical_month": 10,
+  "description": "Hosted by Ronin Cyber Academy.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-03",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Ronin Cyber Academy, 751 W Grant St"
+   }
+  ],
+  "aliases": [
+   "BSidesBozeman"
+  ]
+ },
+ "bsides-prague": {
+  "name": "BSides Prague",
+  "website": "https://www.bsidesprg.cz/",
+  "city": "Prague",
+  "region": null,
+  "country": "CZ",
+  "typical_month": 4,
+  "mastodon": "https://infosec.exchange/@bsidesprg",
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-04-07",
+    "end_date": "2027-04-08",
+    "dates_status": "announced",
+    "venue": "Národní dům na Vinohradech"
+   }
+  ],
+  "aliases": [
+   "BSidesPrague"
+  ]
+ },
+ "bsides-st-johns": {
+  "name": "BSides St. John's",
+  "website": "https://www.bsidesstjohns.com/",
+  "city": "St. John's",
+  "region": "NL",
+  "country": "CA",
+  "typical_month": 9,
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-17",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Holiday Inn Conference Centre"
+   }
+  ],
+  "aliases": [
+   "BSides St. John's",
+   "BSidesStJohns"
+  ]
+ },
+ "bsides-st-pete": {
+  "name": "BSides St. Pete",
+  "website": "https://www.bsidesstpete.com/",
+  "city": "St. Petersburg",
+  "region": "FL",
+  "country": "US",
+  "typical_month": 1,
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-01-29",
+    "end_date": "2027-01-30",
+    "dates_status": "announced"
+   }
+  ],
+  "contact_email": "charles@bsidesstpete.com",
+  "sponsor_email": "sponsorships@bsidesstpete.com",
+  "aliases": [
+   "BSidesStPete"
+  ]
+ },
+ "deathcon": {
+  "name": "DEATHCon Dublin",
+  "website": "https://deathcon.io/",
+  "city": "Dublin",
+  "region": null,
+  "country": "IE",
+  "typical_month": 5,
+  "cfp_url": "https://deathcon.io/cfp.html",
+  "description": "Detection Engineering and Threat Hunting con: three hands-on workshops in one day at Croke Park.",
+  "workshop_track": "yes",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-22",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Croke Park Conference Centre"
+   }
+  ],
+  "verification_notes": "DEATHCon Dublin is a one-day in-person chapter (2026: May 22, Croke Park), separate from deathcon.io's global November online event."
+ },
+ "naclcon": {
+  "name": "NaClCON",
+  "website": "https://naclcon.com/",
+  "city": "Carolina Beach",
+  "region": "NC",
+  "country": "US",
+  "typical_month": 5,
+  "attendance_est": 300,
+  "description": "Three-day 'history of hacking' resort takeover at the Courtyard Carolina Beach Oceanfront; capped at 300, 21+.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-31",
+    "end_date": "2026-06-02",
+    "dates_status": "announced",
+    "venue": "Courtyard by Marriott Carolina Beach Oceanfront",
+    "hotel": "Conference rate $139/night"
+   }
+  ]
+ },
+ "sechealth": {
+  "name": "SEC Health",
+  "website": "https://www.sechealthcon.com/",
+  "city": "Franklin",
+  "region": "TN",
+  "country": "US",
+  "typical_month": 9,
+  "type": "hacker",
+  "description": "SEC Conferences' medical-device security con.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-18",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "hack-the-bay": {
+  "name": "HackTheBay",
+  "website": "https://www.hackthebay.org/",
+  "city": "San Francisco",
+  "region": "CA",
+  "country": "US",
+  "typical_month": 3,
+  "twitter": "@HackTheBayCon",
+  "description": "Pacific Hackers Association's one-day hacker event during RSA week (between BSidesSF and RSAC).",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-03-23",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Public Works, 161 Erie St"
+   }
+  ],
+  "contact_email": "info@pacifichackers.org",
+  "sponsor_email": "sponsors@pacifichackers.org"
+ },
+ "ekoparty-miami": {
+  "name": "Ekoparty Miami",
+  "website": "https://ekoparty.org/miami/",
+  "city": "Miami Beach",
+  "region": "FL",
+  "country": "US",
+  "typical_month": 5,
+  "village_hosting": "yes",
+  "cfp_url": "https://sessionize.com/ekoparty-security-conference-2026-miami/",
+  "description": "First US edition of Ekoparty; talks, villages, challenges.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-21",
+    "end_date": "2026-05-22",
+    "dates_status": "announced",
+    "venue": "Loews Miami Beach Hotel"
+   }
+  ]
+ },
+ "svcc": {
+  "name": "Silicon Valley Cybersecurity Conference (SVCC)",
+  "website": "https://www.svcc-svcsi.org/",
+  "city": "San Jose",
+  "region": "CA",
+  "country": "US",
+  "type": "academic",
+  "typical_month": 6,
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-10",
+    "end_date": "2026-06-12",
+    "dates_status": "announced",
+    "venue": "San Jose State University"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-06-22",
+    "end_date": "2027-06-24",
+    "dates_status": "announced",
+    "city": "San Jose, CA",
+    "url": "https://www.svcc-svcsi.org/",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "url": "https://www.svcc-svcsi.org/call-for-papers",
+      "status": "open"
+     }
+    ]
+   }
+  ],
+  "cfp_url": "https://www.svcc-svcsi.org/call-for-papers"
+ },
+ "defcon-singapore": {
+  "name": "DEF CON Singapore",
+  "website": "https://defcon.org/html/defcon-singapore/dc-singapore-index.html",
+  "city": "Singapore",
+  "region": null,
+  "country": "SG",
+  "typical_month": 4,
+  "cfp_url": "https://defcon.org/html/defcon-singapore/dc-singapore-cfp.html",
+  "village_hosting": "yes",
+  "description": "First DEF CON Singapore, co-organized with HTX; villages, contests, pre-con training.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-04-28",
+    "end_date": "2026-04-30",
+    "dates_status": "announced",
+    "training_start": "2026-04-26",
+    "venue": "Marina Bay Sands"
+   }
+  ],
+  "verification_notes": "defcon.org says future editions will be announced after DEF CON 33; nothing for 2027 yet (2026-09-23)."
+ },
+ "bsides-nova": {
+  "name": "BSides NoVA",
+  "website": "https://www.bsidesnova.org/",
+  "city": "Arlington",
+  "region": "VA",
+  "country": "US",
+  "typical_month": 10,
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-30",
+    "end_date": "2026-10-31",
+    "dates_status": "announced",
+    "notes": "10th year",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "status": "open",
+      "notes": "CFP opened Aug 10, 2026"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "BSidesNoVA"
+  ]
+ },
+ "bsides-rdu": {
+  "name": "BSides RDU",
+  "website": "https://bsidesrdu.org/",
+  "city": "Raleigh",
+  "region": "NC",
+  "country": "US",
+  "typical_month": 12,
+  "village_hosting": "yes",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-12-18",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "McKimmon Conference and Training Center, NC State",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "status": "open"
+     },
+     {
+      "kind": "sponsor",
+      "status": "open",
+      "notes": "Sponsorships available"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "BSidesRDU"
+  ]
+ },
+ "guildcon": {
+  "name": "GuildCon",
+  "website": "https://guildcon.hackersguildpgh.com/",
+  "city": "Pittsburgh",
+  "region": "PA",
+  "country": "US",
+  "typical_month": 11,
+  "workshop_track": "yes",
+  "description": "Hackers Guild Pittsburgh's community con: talks, paid hands-on workshops (e.g. IoT reverse engineering), CTF, family-friendly.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-21",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Hackers Guild Pittsburgh, 2247 Babcock Blvd",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-10-01",
+      "status": "open",
+      "notes": "Notifications Oct 16"
+     }
+    ]
+   }
+  ]
+ },
+ "bsides-dsm": {
+  "name": "BSides DSM",
+  "website": "https://www.bsidesdsm.org/",
+  "city": "Ankeny",
+  "region": "IA",
+  "country": "US",
+  "type": "bsides",
+  "typical_month": 6,
+  "aliases": [
+   "BSides Des Moines",
+   "BSidesDSM"
+  ],
+  "sponsor_url": "https://www.bsidesdsm.org/sponsorship",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-13",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "FFA Center, Ankeny IA"
+   }
+  ]
+ },
+ "bsides-greenville": {
+  "name": "BSides Greenville",
+  "website": "https://www.bsidesgreenville.org/",
+  "city": "Greenville",
+  "region": "SC",
+  "country": "US",
+  "typical_month": 8,
+  "ticket_price": "$70",
+  "village_hosting": "yes",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-08-29",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Fluor South Central"
+   }
+  ],
+  "aliases": [
+   "BSidesGreenville"
+  ]
+ },
+ "bsides-fort-wayne": {
+  "name": "BSides Fort Wayne",
+  "city": "Fort Wayne",
+  "region": "IN",
+  "country": "US",
+  "typical_month": 6,
+  "verification_notes": "Sheet said TX; it is Fort Wayne, Indiana. A 'Fall Event' is also planned Nov 11, 2026.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-06",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Purdue Fort Wayne, Walb Student Union"
+   }
+  ],
+  "contact_email": "bsidesfortwayne@gmail.com",
+  "sponsor_email": "sponsorship@bsidesfortwayne.org",
+  "aliases": [
+   "BSides Fort Wayne",
+   "BSidesFortWayne"
+  ]
+ },
+ "bsides-lehigh-valley": {
+  "remove": true
+ },
+ "bsides-boston": {
+  "remove": true
+ },
+ "bsides-ri": {
+  "remove": true
+ },
+ "bsides-la": {
+  "remove": true
+ },
+ "bsides-indy": {
+  "remove": true
+ },
+ "bsides-huntsville": {
+  "remove": true
+ },
+ "bsides-dc": {
+  "remove": true
+ },
+ "bsides-long-island": {
+  "remove": true
+ },
+ "bsides-sacramento": {
+  "remove": true
+ },
+ "bsides-boise": {
+  "remove": true
+ },
+ "bsides-spokane": {
+  "remove": true
+ },
+ "bsides-santa-fe": {
+  "remove": true
+ },
+ "bsides-winnipeg": {
+  "remove": true
+ },
+ "bsides-halifax": {
+  "verification_notes": "Back on bsides.org with a 2026-11-12 date (2026-09-23).",
+  "name": "BSides Halifax"
+ },
+ "bsides-iowa": {
+  "remove": true
+ },
+ "bsides-asheville": {
+  "remove": true
+ },
+ "bsides-austin": {
+  "remove": true
+ },
+ "thotcon": {
+  "name": "THOTCON",
+  "website": "https://www.thotcon.org/",
+  "city": "Chicago",
+  "region": "IL",
+  "country": "US",
+  "typical_month": 5,
+  "twitter": "@thotcon",
+  "cfp_url": "https://www.thotcon.org/cfp.html",
+  "description": "Chicago's non-profit hacking conference (numbered in hex); site is JS-only so contacts need a manual look.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-30",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-06-11",
+    "end_date": "2027-06-12",
+    "dates_status": "announced",
+    "url": "https://www.thotcon.org/",
+    "notes": "THOTCON 0xE. Venue revealed the week before, as usual. CFP 'opens TBA (2026)'."
+   }
+  ],
+  "verification_notes": "2027 dates June 11-12 per thotcon.org (2026-09-23), later than the usual May slot."
+ },
+ "bsides-stl": {
+  "name": "BSides STL",
+  "website": "https://bsidesstl.org/",
+  "city": "St. Louis",
+  "region": "MO",
+  "country": "US",
+  "type": "bsides",
+  "typical_month": 9,
+  "aliases": [
+   "BSides St. Louis",
+   "BSidesSTL"
+  ],
+  "verification_notes": "Organizers announced there will be no BSidesSTL in 2026 (blockers); last held Sept 27, 2025 at WashU.",
+  "editions": [
+   {
+    "year": 2025,
+    "start_date": "2025-09-27",
+    "dates_status": "confirmed",
+    "venue": "Washington University, McKelvey School of Engineering"
+   },
+   {
+    "year": 2026,
+    "dates_status": "cancelled",
+    "notes": "Skipped 2026 per organizers"
+   }
+  ]
+ },
+ "bsides-chicago": {
+  "verification_notes": "Organizers say BSides Chicago is 'taking a little breathing room' in 2026 — no 2026 event. 2025 was Oct 31-Nov 1.",
+  "editions": [
+   {
+    "year": 2026,
+    "dates_status": "cancelled",
+    "notes": "No 2026 event per bsideschicago.org"
+   }
+  ],
+  "aliases": [
+   "BSidesChicago"
+  ]
+ },
+ "apres-cyber-slopes": {
+  "contact_email": "margie@aprescyber.com",
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-02-24",
+    "end_date": "2027-02-26",
+    "dates_status": "announced",
+    "venue": "Park City, UT"
+   }
+  ]
+ },
+ "atlseccon": {
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-04-08",
+    "end_date": "2027-04-09",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "attackcon": {
+  "contact_email": "attack@mitre.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-27",
+    "end_date": "2026-10-28",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "bsides-budapest": {
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-05-13",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSides BUD",
+   "BSidesBud"
+  ]
+ },
+ "bsides-dayton": {
+  "contact_email": "info@bsidesdayton.com",
+  "sponsor_email": "sponsors@bsidesdayton.com",
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-05-15",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesDayton"
+  ]
+ },
+ "bsides-groningen": {
+  "contact_email": "info@bsidesgrunn.org",
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-04-09",
+    "end_date": null,
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2027-02-01",
+      "status": "open"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "BSidesGroningen"
+  ]
+ },
+ "bsides-hbg": {
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-05-21",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesHBG",
+   "BSidesHarrisburg"
+  ]
+ },
+ "bsides-idaho-falls": {
+  "sponsor_email": "sponsor@bsidesif.org",
+  "website": "https://bsidesif.org/",
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-04-16",
+    "end_date": "2027-04-17",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesIdahoFalls"
+  ]
+ },
+ "bsides-jacksonville": {
+  "contact_email": "info@bsidesjax.org",
+  "sponsor_email": "sponsors@bsidesjax.org",
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-02-19",
+    "end_date": "2027-02-20",
+    "dates_status": "announced",
+    "notes": "Postponed from September 2026 per bsides.org"
+   }
+  ],
+  "aliases": [
+   "BSidesJAX",
+   "BSidesJacksonville"
+  ]
+ },
+ "bsides-kc": {
+  "sponsor_email": "sponsors@bsideskc.org",
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-04-24",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesKC"
+  ]
+ },
+ "bsides-leeds": {
+  "contact_email": "bsidesleeds23@gmail.com",
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-06-12",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesLeeds"
+  ]
+ },
+ "bsides-maine": {
+  "contact_email": "contact@bsidesmaine.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-30",
+    "end_date": null,
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-06-05",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSides Maine",
+   "BSidesMaine"
+  ]
+ },
+ "bsides-pittsburgh": {
+  "contact_email": "info@bsidespgh.com",
+  "sponsor_email": "sponsors@bsidespgh.com",
+  "website": "https://www.bsidespgh.com/",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-07-10",
+    "end_date": null,
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-07-09",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesPGH"
+  ]
+ },
+ "bsides-regina": {
+  "website": "https://www.bsidesregina.ca/",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-03-18",
+    "end_date": null,
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-03-17",
+    "end_date": "2027-03-18",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesRegina",
+   "Security BSides Regina"
+  ]
+ },
+ "bsides-reykjavik": {
+  "contact_email": "info@bsidesreykjavik.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-03-18",
+    "end_date": null,
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-03-16",
+    "end_date": "2027-03-17",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSides Reykjavik"
+  ]
+ },
+ "bsides-roc": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-03-20",
+    "end_date": "2026-03-21",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-03-20",
+    "end_date": "2027-03-21",
+    "dates_status": "announced",
+    "notes": "Training day Mar 20, conference Mar 21"
+   }
+  ],
+  "aliases": [
+   "BSides Rochester",
+   "BSidesROC"
+  ]
+ },
+ "bsidescharm": {
+  "contact_email": "info@bsidescharm.org",
+  "sponsor_email": "sponsors@bsidescharm.org",
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-04-24",
+    "end_date": "2027-04-25",
+    "dates_status": "announced"
+   }
+  ],
+  "sponsor_docs_url": "https://bsidescharm.org/wp-content/uploads/2025/11/BSidesCharm-2026-Sponsor-Package.pdf",
+  "aliases": [
+   "BSidesCharm",
+   "Bsides Charm"
+  ]
+ },
+ "cactuscon": {
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-02-05",
+    "end_date": "2027-02-06",
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-10-11",
+      "status": "open",
+      "url": "https://www.cactuscon.com/"
+     }
+    ]
+   }
+  ]
+ },
+ "cyphercon": {
+  "contact_email": "hello@cyphercon.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-04-01",
+    "end_date": "2026-04-02",
+    "dates_status": "announced",
+    "training_start": "2026-03-30"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-03-24",
+    "end_date": "2027-03-25",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "def-con": {
+  "contact_email": "info@defcon.org",
+  "cfp_email": "talks@defcon.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-08-06",
+    "end_date": "2026-08-09",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-08-05",
+    "end_date": "2027-08-08",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "districtcon": {
+  "website": "https://www.districtcon.org/",
+  "verification_notes": "cfptime.org lists a DistrictCon entry dated Oct 31, 2026; the official site shows Feb 6-7, 2027 (year 3). Treat Oct 2026 as an error.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-01-24",
+    "end_date": "2026-01-25",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-02-06",
+    "end_date": "2027-02-07",
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-08-21",
+      "status": "closed",
+      "url": "https://sessionize.com/districtcon"
+     }
+    ]
+   }
+  ]
+ },
+ "insomnihack": {
+  "contact_email": "contact@insomnihack.ch",
+  "sponsor_email": "sponsoring@insomnihack.ch",
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-02-01",
+    "end_date": "2027-02-05",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "isdfs": {
+  "contact_email": "isdfs.conf@gmail.com",
+  "type": "academic",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-03-19",
+    "end_date": "2026-03-20",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-03-25",
+    "end_date": "2027-03-26",
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2027-01-31",
+      "status": "open"
+     }
+    ]
+   }
+  ]
+ },
+ "northsec": {
+  "contact_email": "contact@nsec.io",
+  "sponsor_email": "sponsor@nsec.io",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-14",
+    "end_date": "2026-05-15",
+    "dates_status": "announced",
+    "training_start": "2026-05-11"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-05-20",
+    "end_date": "2027-05-21",
+    "dates_status": "announced",
+    "training_start": "2027-05-17"
+   }
+  ]
+ },
+ "open-sauce": {
+  "contact_email": "contact@opensauce.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-07-17",
+    "end_date": "2026-07-19",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-07-17",
+    "end_date": "2027-07-18",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "rmisc": {
+  "type": "industry",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-23",
+    "end_date": "2026-06-25",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-05-11",
+    "end_date": "2027-05-13",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "secretcon": {
+  "contact_email": "hello@secretcon.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-04",
+    "end_date": "2026-06-05",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-05-06",
+    "end_date": "2027-05-07",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "vcf-southwest": {
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-06-25",
+    "end_date": "2027-06-27",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "wicys": {
+  "contact_email": "info@wicys.org",
+  "type": "industry",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-03-11",
+    "end_date": "2026-03-14",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-03-17",
+    "end_date": "2027-03-19",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "maker-faire-hannover": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-08-15",
+    "end_date": "2026-08-16",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-08-21",
+    "end_date": "2027-08-22",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "bsides-augusta": {
+  "contact_email": "info@bsidesaugusta.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-24",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesAugusta"
+  ]
+ },
+ "bsides-berlin": {
+  "contact_email": "contact@bsides.berlin",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-12",
+    "end_date": "2026-11-13",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesBerlin"
+  ]
+ },
+ "bsides-buffalo": {
+  "contact_email": "info@bsidesbuffalo.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-06",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSides Buffalo",
+   "BSidesBuffalo"
+  ]
+ },
+ "bsides-cache": {
+  "sponsor_email": "sponsors@bsidesslc.org",
+  "notes": "Run by the BSides SLC crew.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-18",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Logan, UT"
+   }
+  ],
+  "aliases": [
+   "BSidesCache"
+  ]
+ },
+ "bsides-calgary": {
+  "contact_email": "bsidescalgary@bsidescalgary.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-25",
+    "end_date": "2026-05-26",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSides Calgary",
+   "BSidesCalgary"
+  ]
+ },
+ "bsides-cambridge-ma": {
+  "contact_email": "bsidescambridgema@proton.me",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-25",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesCambridgeMA"
+  ]
+ },
+ "bsides-charleston": {
+  "contact_email": "bsideschs@gmail.com",
+  "city": "Charleston",
+  "region": "SC",
+  "country": "US",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-07",
+    "end_date": null,
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-09-01",
+      "status": "closed"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "BSidesCHS",
+   "BSidesCharleston"
+  ]
+ },
+ "bsides-cleveland": {
+  "contact_email": "bsidescleveland@gmail.com",
+  "sponsor_email": "sponsors@bsidescle.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-26",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesCleveland"
+  ]
+ },
+ "bsides-clt": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-03-28",
+    "end_date": "2026-03-29",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSides Charlotte",
+   "BSidesCLT",
+   "BSidesCharlotte"
+  ]
+ },
+ "bsides-cos": {
+  "contact_email": "bsidescos@gmail.com",
+  "verification_notes": "bsides.org lists 'BSides COS 2026 POSTPONED TO 2027'.",
+  "editions": [
+   {
+    "year": 2025,
+    "start_date": "2025-10-25",
+    "end_date": null,
+    "dates_status": "confirmed"
+   }
+  ],
+  "aliases": [
+   "BSides COS",
+   "BSidesCOS",
+   "BSidesColoradoSprings"
+  ]
+ },
+ "bsides-ct": {
+  "contact_email": "info@bsidesct.org",
+  "city": "Fairfield",
+  "region": "CT",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-26",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesCT"
+  ]
+ },
+ "bsides-detroit": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-30",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesDetroit"
+  ]
+ },
+ "bsides-dfw": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-07",
+    "end_date": null,
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-09-03",
+      "status": "closed"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "BSidesDFW"
+  ]
+ },
+ "bsides-edmonton": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-24",
+    "end_date": "2026-09-25",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesEdmonton"
+  ]
+ },
+ "bsides-frankfurt": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-10",
+    "end_date": "2026-09-11",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSides Frankfurt"
+  ]
+ },
+ "bsides-fredericton": {
+  "contact_email": "bsidesfredericton@gmail.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-27",
+    "end_date": "2026-10-28",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesFredericton"
+  ]
+ },
+ "bsides-galway": {
+  "cfp_email": "cfp@bsidesgalway.com",
+  "contact_email": "info@bsidesgalway.com",
+  "sponsor_email": "sponsors@bsidesgalway.com",
+  "aliases": [
+   "BSidesGalway"
+  ]
+ },
+ "bsides-ics-ot": {
+  "contact_email": "info@bsidesics.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-02-23",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSides ICS",
+   "BSidesICS/OT"
+  ]
+ },
+ "bsides-kristiansand": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-05",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesKristiansand"
+  ]
+ },
+ "bsides-lancashire": {
+  "contact_email": "bsideslancashire@gmail.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-03-26",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesLancashire"
+  ]
+ },
+ "bsides-limburg": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-03-12",
+    "end_date": "2026-03-13",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesLimburg"
+  ]
+ },
+ "bsides-memphis": {
+  "contact_email": "info@bsidesmemphis.org",
+  "sponsor_email": "sponsors@bsidesmemphis.org",
+  "website": "https://www.bsidesmemphis.org/",
+  "aliases": [
+   "BSidesMemphis"
+  ]
+ },
+ "bsides-milwaukee": {
+  "contact_email": "mkebsides@gmail.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-04-03",
+    "end_date": null,
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-03-26",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSides MKE",
+   "BSidesMKE",
+   "BSidesMilwaukee"
+  ]
+ },
+ "bsides-montreal": {
+  "contact_email": "hello@bsidesmtl.ca",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-19",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesMontreal"
+  ]
+ },
+ "bsides-nashville": {
+  "contact_email": "info@bsidesnash.org",
+  "aliases": [
+   "BSides Nash",
+   "BSidesNash",
+   "BSidesNashville"
+  ]
+ },
+ "bsides-nepa": {
+  "contact_email": "organizers@bsidesnepa.org",
+  "city": "Wilkes-Barre",
+  "region": "PA",
+  "verification_notes": "2025 was in Scranton; 2026 is Sept 12 in Wilkes-Barre per bsides.org/cfptime.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-12",
+    "end_date": null,
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-08-13",
+      "status": "closed"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "BSidesNEPA"
+  ]
+ },
+ "bsides-nyc": {
+  "contact_email": "bsides@bsidesnyc.org",
+  "city": "New York",
+  "region": "NY",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-17",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesNYC"
+  ]
+ },
+ "bsides-orlando": {
+  "sponsor_email": "sponsor@bsidesorlando.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-25",
+    "end_date": "2026-09-26",
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-08-27",
+      "status": "closed"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "BSidesOrlando"
+  ]
+ },
+ "bsides-ot-uk": {
+  "contact_email": "info@bsidesot.uk",
+  "aliases": [
+   "BSides OT UK"
+  ]
+ },
+ "bsides-ottawa": {
+  "cfp_email": "cfp@bsidesottawa.ca",
+  "contact_email": "contact@bsidesottawa.ca",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-19",
+    "end_date": "2026-11-20",
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-09-15",
+      "status": "open"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "BSidesOttawa"
+  ]
+ },
+ "bsides-pdx": {
+  "cfp_email": "cfp@bsidespdx.org",
+  "sponsor_email": "sponsorship@bsidespdx.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-23",
+    "end_date": "2026-10-24",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesPDX",
+   "BSidesPortland"
+  ]
+ },
+ "bsides-roanoke": {
+  "sponsor_email": "sponsors@roanokeinfosec.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-05",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesRoanoke"
+  ]
+ },
+ "bsides-satx": {
+  "cfp_email": "cfp@bsidessatx.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-13",
+    "end_date": null,
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-06-11",
+    "end_date": "2027-06-12",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSides SATX",
+   "BSidesSATX"
+  ]
+ },
+ "bsides-seattle": {
+  "verification_notes": "Sheet had 2028-02-27 (typo); bsides.org shows Feb 27, 2026.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-02-27",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesSeattle"
+  ]
+ },
+ "bsides-slc": {
+  "sponsor_email": "sponsors@bsidesslc.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-04-09",
+    "end_date": "2026-04-10",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSides SLC",
+   "BSidesSLC"
+  ]
+ },
+ "bsides-south-florida": {
+  "contact_email": "info@bsidessouthflorida.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-08",
+    "end_date": null,
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-05-06",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesSouthFlorida"
+  ]
+ },
+ "bsides-south-jersey": {
+  "contact_email": "bsidessouthjersey@gmail.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-04-18",
+    "end_date": null,
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-01-16",
+      "status": "closed"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "BSidesSouthJersey"
+  ]
+ },
+ "bsides-tampa": {
+  "sponsor_email": "sponsorship@bsidestampa.net",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-15",
+    "end_date": "2026-05-16",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesTampa"
+  ]
+ },
+ "bsides-tc": {
+  "verification_notes": "Sheet said Oct 16; bsides.org and the site say Oct 23, 2026.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-23",
+    "end_date": null,
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-09-10",
+      "status": "open"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "BSidesTC"
+  ]
+ },
+ "bsides-tlv": {
+  "contact_email": "info@bsidestlv.com",
+  "sponsor_email": "sponsors@bsidestlv.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-11",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesTLV"
+  ]
+ },
+ "bsides-toronto": {
+  "contact_email": "info@bsidesto.ca",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-03",
+    "end_date": "2026-10-04",
+    "dates_status": "announced",
+    "venue": "Toronto Metropolitan University"
+   }
+  ],
+  "aliases": [
+   "BSidesToronto"
+  ]
+ },
+ "bsides-zadar": {
+  "contact_email": "info@bsideszadar.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-11",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesZadar"
+  ]
+ },
+ "bsides-las-vegas": {
+  "sponsor_email": "sponsors@bsideslv.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-08-03",
+    "end_date": "2026-08-05",
+    "dates_status": "announced"
+   }
+  ],
+  "bluesky": "https://bsky.app/profile/bsideslv.org",
+  "contact_email": "info@bsideslv.org",
+  "aliases": [
+   "BSides Las Vegas",
+   "BSidesLV",
+   "Bsides LAS"
+  ]
+ },
+ "bsides-london": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-12-12",
+    "end_date": null,
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-09-30",
+      "status": "open"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "BSidesLondon"
+  ]
+ },
+ "burning-river-cyber-con": {
+  "contact_email": "burningrivercon@proton.me",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-14",
+    "end_date": null,
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-09-18",
+      "status": "open"
+     }
+    ]
+   }
+  ]
+ },
+ "c0c0n": {
+  "contact_email": "info@c0c0n.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-09",
+    "end_date": "2026-10-10",
+    "dates_status": "announced",
+    "training_start": "2026-10-06"
+   }
+  ],
+  "city": "Kochi",
+  "region": "Kerala",
+  "country": "IN"
+ },
+ "cackalackycon": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-15",
+    "end_date": "2026-05-17",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-05-14",
+    "end_date": "2027-05-16",
+    "dates_status": "announced",
+    "venue": "DoubleTree by Hilton Raleigh-Durham Airport at RTP",
+    "city": "Raleigh",
+    "notes": "2027 moves to the RDU-airport DoubleTree in Raleigh"
+   }
+  ],
+  "bluesky": "https://bsky.app/profile/cackalackycon.bsky.social",
+  "mastodon": "https://infosec.exchange/@CackalackyCon",
+  "twitter": "@cackalackycon"
+ },
+ "cansecwest": {
+  "contact_email": "info@secwest.net",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-30",
+    "end_date": "2026-10-01",
+    "dates_status": "announced",
+    "training_start": "2026-09-26"
+   }
+  ]
+ },
+ "corncon": {
+  "contact_email": "corncon@docent.org",
+  "sponsor_email": "sponsors@docent.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-03",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "dakotacon": {
+  "contact_email": "dakotacon@dsu.edu",
+  "verification_notes": "Sheet had Mar 21-22; site shows Mar 27-28, 2026.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-03-27",
+    "end_date": "2026-03-28",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "deepsec": {
+  "cfp_email": "cfp@deepsec.net",
+  "contact_email": "deepsec@deepsec.net",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-17",
+    "end_date": "2026-11-20",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "blue-team-con": {
+  "sponsor_email": "sponsors@blueteamcon.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-10",
+    "end_date": "2026-09-13",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "hackfest": {
+  "sponsor_email": "partners@hackfest.ca",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-30",
+    "end_date": "2026-10-31",
+    "dates_status": "announced",
+    "training_start": "2026-10-29"
+   }
+  ]
+ },
+ "hackmiami": {
+  "cfp_email": "cfp@hackmiami.info",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-16",
+    "end_date": null,
+    "dates_status": "announced",
+    "training_start": "2026-05-12",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-02-28",
+      "status": "closed"
+     }
+    ],
+    "venue": "Marenas Beach Resort"
+   }
+  ],
+  "city": "Sunny Isles Beach",
+  "region": "FL"
+ },
+ "hacker-halted": {
+  "contact_email": "eccevents@eccouncil.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-04",
+    "end_date": "2026-10-07",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "hammercon": {
+  "contact_email": "christine@milcyber.org",
+  "city": "Laurel",
+  "region": "MD",
+  "country": "US",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-24",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "hope": {
+  "contact_email": "feedback@hope.net",
+  "sponsor_email": "sponsors@hope.net",
+  "city": "New York",
+  "region": "NY",
+  "country": "US",
+  "vending_notes": "Has a vendor coordinator: vendors@hope.net",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-08-14",
+    "end_date": "2026-08-16",
+    "dates_status": "announced"
+   }
+  ],
+  "verification_notes": "HOPE became annual in 2025; 2027 not announced yet. hope.net also mentions a May 15, 2027 date (likely a deadline)."
+ },
+ "houseccon": {
+  "contact_email": "info@cscgroupllc.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-15",
+    "end_date": "2026-09-16",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "ics-cyber-security-conference": {
+  "type": "industry",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-06",
+    "end_date": "2026-10-08",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "infosec-world": {
+  "type": "industry",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-11",
+    "end_date": "2026-10-15",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "labscon": {
+  "contact_email": "info@labscon.io",
+  "sponsor_email": "sponsors@labscon.io",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-16",
+    "end_date": "2026-09-19",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "layer8": {
+  "sponsor_email": "sponsors@layer8conference.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-05",
+    "end_date": "2026-06-06",
+    "dates_status": "announced"
+   }
+  ],
+  "twitter": "@Layer8Con",
+  "village_hosting": "yes",
+  "workshop_track": "yes",
+  "description": "Social engineering + OSINT con in Boston; trainings and a lockpick village; ~$50 tickets."
+ },
+ "layerone": {
+  "contact_email": "contact@layerone.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-23",
+    "end_date": "2026-05-24",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "lehack": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-26",
+    "end_date": "2026-06-28",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "nolacon": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-15",
+    "end_date": "2026-05-17",
+    "dates_status": "announced",
+    "training_start": "2026-05-13"
+   }
+  ]
+ },
+ "open-hardware-summit": {
+  "contact_email": "summit@oshwa.org",
+  "sponsor_email": "summit-sponsors@oshwa.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-23",
+    "end_date": "2026-05-24",
+    "dates_status": "announced",
+    "venue": "TU Berlin",
+    "city": "Berlin, DE"
+   }
+  ],
+  "city": "Berlin",
+  "region": null,
+  "country": "DE",
+  "lat": null,
+  "lon": null,
+  "verification_notes": "Location moves each year; 2026 was May 23-24 at TU Berlin. 2027 location not announced (2026-09-23)."
+ },
+ "rvasec": {
+  "contact_email": "info@rvasec.com",
+  "sponsor_email": "sponsors@rvasec.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-09",
+    "end_date": "2026-06-10",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "saintcon": {
+  "sponsor_email": "sponsors@saintcon.org",
+  "city": "Provo",
+  "region": "UT",
+  "country": "US",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-27",
+    "end_date": "2026-10-30",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "sec-t": {
+  "cfp_email": "cfp@sec-t.org",
+  "sponsor_email": "sponsors@sec-t.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-09",
+    "end_date": "2026-09-11",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "security-fest": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-28",
+    "end_date": "2026-05-29",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "shellcon": {
+  "cfp_email": "cfp@shellcon.io",
+  "cfv_url": "mailto:hackervillage@shellcon.io",
+  "village_hosting": "yes",
+  "description": "LA beach-cities con with a Hacker Village (lockpicking, soldering, CTF) and workshops.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-08",
+    "end_date": "2026-10-09",
+    "dates_status": "tentative",
+    "notes": "Search results say Oct 8-9; format (in-person vs virtual) unconfirmed"
+   }
+  ],
+  "verification_notes": "shellcon.io has had no new content since 2021; may be dormant (2026-09-23)."
+ },
+ "sleuthcon": {
+  "contact_email": "contact@sleuthcon.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-05",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "spiceworld": {
+  "type": "industry",
+  "verification_notes": "Sheet said June 28-29; SpiceWorld 2026 is Nov 11-12 in Austin per spiceworks.com.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-11",
+    "end_date": "2026-11-12",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "steelcon": {
+  "contact_email": "info@steelcon.info",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-07-10",
+    "end_date": "2026-07-12",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "summercon": {
+  "contact_email": "john@summercon.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-07-10",
+    "end_date": "2026-07-11",
+    "dates_status": "announced"
+   }
+  ],
+  "verification_notes": "Organizers are teasing 'SUMMERCON XL' for 2027, no dates yet (2026-09-23)."
+ },
+ "teardown": {
+  "contact_email": "teardown@crowdsupply.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-07-24",
+    "end_date": "2026-07-26",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "the-long-con": {
+  "contact_email": "organizers@thelongcon.ca",
+  "city": "Winnipeg",
+  "region": "MB",
+  "country": "CA",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-08",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "The Long Con",
+   "The Long Conn"
+  ]
+ },
+ "threatcon1": {
+  "contact_email": "events@vulncheck.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-05",
+    "end_date": "2026-10-07",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "toorcamp": {
+  "city": "Doe Bay",
+  "region": "WA",
+  "notes": "Biennial camp on Orcas Island; next expected 2028.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-24",
+    "end_date": "2026-06-28",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "toorcon": {
+  "remove": true
+ },
+ "triss": {
+  "contact_email": "events@threeriversinfosec.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-22",
+    "end_date": null,
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "unprompted": {
+  "contact_email": "contact@unpromptedcon.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-27",
+    "end_date": "2026-10-29",
+    "dates_status": "announced",
+    "notes": "A March 3-4, 2026 edition also ran; the site now shows Oct 27-29, 2026."
+   }
+  ]
+ },
+ "uybhys": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-06",
+    "end_date": "2026-11-07",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "vcf-east": {
+  "contact_email": "vcfeast@vcfed.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-04-17",
+    "end_date": "2026-04-19",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-04-16",
+    "end_date": "2027-04-18",
+    "dates_status": "estimated",
+    "notes": "A vcfed.org calendar hint mentions 'April 4, 5, 6' — could be 2027; confirm with vcfeast@vcfed.org"
+   }
+  ]
+ },
+ "vcf-midwest": {
+  "contact_email": "inf0@vcfmw.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-12",
+    "end_date": "2026-09-13",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "vcf-west": {
+  "contact_email": "vcfwest@vcfed.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-08-01",
+    "end_date": "2026-08-02",
+    "dates_status": "tentative"
+   }
+  ]
+ },
+ "wwhf-deadwood": {
+  "contact_email": "michaelz@blackhillsinfosec.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-07",
+    "end_date": "2026-10-09",
+    "dates_status": "announced",
+    "training_start": "2026-10-06"
+   }
+  ]
+ },
+ "wwhf-mile-high": {
+  "contact_email": "michaelz@blackhillsinfosec.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-02-11",
+    "end_date": "2026-02-13",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-02-17",
+    "end_date": "2027-02-19",
+    "dates_status": "announced",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-10-30",
+      "status": "open"
+     }
+    ]
+   }
+  ],
+  "aliases": [
+   "Wild West Hackin' Fest @ Mile High"
+  ]
+ },
+ "hardwear-io-usa": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-26",
+    "end_date": "2026-05-30",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "hardwear-io-nl": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-16",
+    "end_date": "2026-11-20",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "44con": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-17",
+    "end_date": "2026-09-18",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "area41": {
+  "sponsor_email": "sponsoring@defcon-switzerland.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-18",
+    "end_date": "2026-06-19",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "balccon": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-18",
+    "end_date": "2026-09-20",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "grrcon": {
+  "contact_email": "marketing@grrcon.com",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-24",
+    "end_date": "2026-09-25",
+    "dates_status": "announced",
+    "venue": "DeVos Place"
+   }
+  ],
+  "mastodon": "https://infosec.exchange/@GrrCON"
+ },
+ "brucon": {
+  "contact_email": "info@brucon.org",
+  "sponsor_email": "sponsors@brucon.org",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-24",
+    "end_date": "2026-09-25",
+    "dates_status": "announced",
+    "venue": "Lamot Congress Center, Mechelen"
+   }
+  ]
+ },
+ "emf-camp": {
+  "contact_email": "contact@emfcamp.org"
+ },
+ "troopers": {
+  "contact_email": "info@troopers.de",
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-06-23",
+    "end_date": "2027-06-25",
+    "dates_status": "announced",
+    "notes": "Site references June 25, 2027; exact span unconfirmed",
+    "training_start": "2027-06-21",
+    "training_end": "2027-06-22",
+    "city": "Heidelberg, DE",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2027-03-31",
+      "status": "open"
+     }
+    ]
+   }
+  ],
+  "verification_notes": "TROOPERS27: trainings June 21-22, conference June 23-25, CFP closes March 31, 2027 (troopers.de, 2026-09-23)."
+ },
+ "bornhack": {
+  "contact_email": "info@bornhack.dk",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-07-15",
+    "end_date": "2026-07-22",
+    "dates_status": "tentative"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-07-21",
+    "end_date": "2027-07-28",
+    "dates_status": "announced",
+    "url": "https://bornhack.dk/bornhack-2027/"
+   }
+  ],
+  "verification_notes": "2027 camp July 21-28 on Funen per bornhack.dk/bornhack-2027 (site blocks scripts; seen via search, 2026-09-23)."
+ },
+ "nullcon-goa": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-02-28",
+    "end_date": "2026-03-01",
+    "dates_status": "announced"
+   }
+  ],
+  "verification_notes": "nullcon.net already lists 'Goa 2027' in its menu, dates not posted (2026-09-23)."
+ },
+ "hexacon": {
+  "contact_email": "contact@hexacon.fr",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-16",
+    "end_date": "2026-10-17",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "ekoparty": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-07",
+    "end_date": "2026-10-09",
+    "dates_status": "announced",
+    "venue": "Centro de Convenciones Buenos Aires (CEC)",
+    "url": "https://ekoparty.org/",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "url": "https://sessionize.com/ekoparty-security-conference-2026-buenos-aires/",
+      "status": "closed"
+     }
+    ]
+   }
+  ],
+  "cfp_url": "https://sessionize.com/ekoparty-security-conference-2026-buenos-aires/",
+  "verification_notes": "2026 edition confirmed Oct 7-9 on ekoparty.org (2026-09-23)."
+ },
+ "maker-faire-coney-island": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-09-19",
+    "end_date": "2026-09-21",
+    "dates_status": "announced"
+   }
+  ]
+ },
+ "bsides-swfl": {
+  "verification_notes": "Sheet had Nov 6, 2026; bsides.org lists Nov 14, 2025 and next Feb 26-27, 2027. The 2026 date is unconfirmed.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-06",
+    "end_date": null,
+    "dates_status": "tentative"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-02-26",
+    "end_date": "2027-02-27",
+    "dates_status": "announced"
+   }
+  ],
+  "aliases": [
+   "BSidesSWFL"
+  ]
+ },
+ "jawncon": {
+  "name": "JawnCon",
+  "website": "https://jawncon.org/",
+  "city": "Glenside",
+  "region": "PA",
+  "country": "US",
+  "typical_month": 10,
+  "discord_url": "https://discord.gg/XJVydqbdbt",
+  "mastodon": "https://infosec.exchange/@jawncon",
+  "youtube": "https://www.youtube.com/@JawnCon",
+  "cfp_url": "https://cfp.jawncon.org/",
+  "sponsor_url": "https://jawncon.org/sponsor.html",
+  "ticket_price": "$100 (students free)",
+  "description": "Philly-area hacker con at Arcadia University; JawnCon 0x3 is Oct 16-18, 2026 (keynote Matt Blaze).",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-16",
+    "end_date": "2026-10-18",
+    "dates_status": "announced",
+    "venue": "Arcadia University, Commons Building",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-09-01",
+      "status": "closed",
+      "url": "https://cfp.jawncon.org/"
+     }
+    ]
+   }
+  ]
+ },
+ "notacon": {
+  "name": "Notacon",
+  "type": "online",
+  "priority": "low",
+  "city": "Cleveland",
+  "online": 0,
+  "verification_notes": "notaconcon.com is a Skeptics Guide to the Universe meetup in Sydney (July 23-25, 2026), not a hacker con. The May 1, 2026 row in your sheet is probably a mislink; the old Cleveland Notacon ended in 2014. Notacon (Cleveland) ended in 2014. notaconcon.com is an unrelated skeptics meetup in Sydney.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-01",
+    "end_date": null,
+    "dates_status": "unknown"
+   }
+  ],
+  "website": null,
+  "archived": 1,
+  "region": "OH",
+  "country": "US"
+ },
+ "hackaday-supercon": {
+  "cfp_url": "https://hackaday.com/2026/07/13/2026-hackaday-supercon-call-for-proposals/",
+  "description": "Hackaday's 10th Supercon: hardware talks, badge hacking, workshops; expanded venue in 2026.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-06",
+    "end_date": "2026-11-08",
+    "dates_status": "announced",
+    "venue": "ArtCenter College of Design South Campus, Pasadena"
+   }
+  ]
+ },
+ "texas-cyber-summit": {
+  "remove": true
+ },
+ "sector": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-10-06",
+    "end_date": "2026-10-08",
+    "dates_status": "announced",
+    "venue": "Metro Toronto Convention Centre"
+   }
+  ]
+ },
+ "nahamcon": {
+  "type": "online",
+  "online": 1,
+  "city": null,
+  "editions": [
+   {
+    "year": 2025,
+    "start_date": "2025-12-18",
+    "end_date": null,
+    "dates_status": "confirmed"
+   },
+   {
+    "year": 2026,
+    "start_date": null,
+    "end_date": null,
+    "dates_status": "unknown",
+    "notes": "No 2026 date announced yet"
+   }
+  ],
+  "verification_notes": "nahamcon.com only says 'back in 2026' with no date yet (2026-09-23)."
+ },
+ "pancakescon": {
+  "type": "online",
+  "online": 1,
+  "mastodon": "https://infosec.exchange/@pancakescon",
+  "twitter": "@pancakescon",
+  "editions": [
+   {
+    "year": 2025,
+    "start_date": "2025-09-21",
+    "end_date": null,
+    "dates_status": "confirmed"
+   },
+   {
+    "year": 2026,
+    "start_date": null,
+    "end_date": null,
+    "dates_status": "unknown",
+    "notes": "PancakesCon 6 was Sept 21, 2025; nothing announced for 2026 yet"
+   }
+  ]
+ },
+ "carolinacon": {
+  "city": "Raleigh",
+  "region": "NC",
+  "country": "US",
+  "typical_month": 11,
+  "editions": [
+   {
+    "year": 2025,
+    "start_date": "2025-11-08",
+    "end_date": "2025-11-09",
+    "dates_status": "confirmed"
+   },
+   {
+    "year": 2026,
+    "start_date": "2026-10-23",
+    "end_date": "2026-10-25",
+    "dates_status": "announced",
+    "url": "https://carolinacon.org/",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "due_date": "2026-09-22",
+      "status": "closed",
+      "url": "https://carolinacon.org/pages/join-us.html#become-a-speaker"
+     }
+    ]
+   }
+  ],
+  "verification_notes": "2026 dates Oct 23-25 confirmed on carolinacon.org (2026-09-23); CFP closed Sept 22."
+ },
+ "ieee-sp": {
+  "name": "IEEE Symposium on Security and Privacy",
+  "city": "Montreal",
+  "region": "QC",
+  "country": "CA",
+  "type": "academic",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-18",
+    "end_date": "2026-05-21",
+    "dates_status": "announced",
+    "venue": "San Francisco"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-05-17",
+    "end_date": "2027-05-20",
+    "dates_status": "announced",
+    "venue": "Le Centre Sheraton Montreal Hotel",
+    "city": "Montreal, QC",
+    "url": "https://sp2027.ieee-security.org/"
+   }
+  ],
+  "website": "https://sp2027.ieee-security.org/",
+  "lat": null,
+  "lon": null,
+  "verification_notes": "2027 edition is May 17-20 in Montreal (sp2027.ieee-security.org, 2026-09-23)."
+ },
+ "maker-faire-san-jose": {
+  "city": "San Jose",
+  "region": "CA",
+  "country": "US"
+ },
+ "pumpcon": {
+  "city": "Philadelphia",
+  "region": "PA",
+  "country": "US",
+  "typical_month": 10,
+  "description": "One of the oldest US hacker cons (since 1993): Friday pre-party, Saturday talks in a North Philly basement/bar, after-party.",
+  "editions": [
+   {
+    "year": 2025,
+    "start_date": "2025-10-24",
+    "end_date": "2025-10-25",
+    "dates_status": "confirmed"
+   },
+   {
+    "year": 2026,
+    "start_date": "2026-10-24",
+    "end_date": null,
+    "dates_status": "estimated",
+    "notes": "pumpcon.org was unreachable; estimated as the last Saturday of October"
+   }
+  ],
+  "website": "https://pumpcon.org/",
+  "twitter": "@pumpcon",
+  "attendance_band": "<100",
+  "verification_notes": "pumpcon.fail expired and now shows a domain-resale page; pumpcon.org returned no content (2026-09-23). Watch @pumpcon socials for the 2026 date."
+ },
+ "black-hat-europe": {
+  "type": "industry",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-12-07",
+    "end_date": "2026-12-10",
+    "dates_status": "announced",
+    "notes": "Usually the second week of December at ExCeL London; confirm on blackhat.com",
+    "venue": "ExCeL London"
+   }
+  ]
+ },
+ "ccc-congress": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-12-27",
+    "end_date": "2026-12-30",
+    "dates_status": "announced",
+    "notes": "39C3 — CCC congress is always Dec 27-30 in Hamburg",
+    "venue": "Hamburg Messe"
+   }
+  ],
+  "name": "Chaos Communication Congress (40C3)",
+  "aliases": [
+   "40C3",
+   "39C3",
+   "CCC Congress"
+  ],
+  "attendance_est": 17000,
+  "ticket_price": "€50–€575"
+ },
+ "ccc-camp": {
+  "editions": [
+   {
+    "year": 2027,
+    "start_date": "2027-08-10",
+    "end_date": "2027-08-15",
+    "dates_status": "estimated",
+    "notes": "Camp runs every four years (2023 → 2027); mid-August at Ziegeleipark Mildenberg"
+   }
+  ]
+ },
+ "recon": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-19",
+    "end_date": "2026-06-21",
+    "dates_status": "confirmed"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-06-18",
+    "end_date": "2027-06-20",
+    "training_start": "2027-06-14",
+    "training_end": "2027-06-17",
+    "dates_status": "announced",
+    "venue": "DoubleTree by Hilton Montreal",
+    "url": "https://recon.cx/2027/en/index.html",
+    "deadlines": [
+     {
+      "kind": "cfp",
+      "url": "https://recon.cx/2027/en/cfp.html",
+      "status": "open"
+     }
+    ]
+   }
+  ],
+  "cfp_url": "https://recon.cx/2027/en/cfp.html"
+ },
+ "hack-red-con": {
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-12-04",
+    "end_date": null,
+    "dates_status": "announced",
+    "notes": "Date from infosec-conferences.com listing"
+   }
+  ]
+ },
+ "simply-cyber-con": {
+  "online": 1,
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-11-08",
+    "end_date": null,
+    "dates_status": "announced",
+    "notes": "Date from infosec-conferences.com listing"
+   }
+  ]
+ },
+ "bsides-red-rocks": {
+  "sponsor_email": "sponsors@bsidesslc.org",
+  "notes": "Run by the BSides SLC crew.",
+  "editions": [
+   {
+    "year": 2025,
+    "start_date": "2025-11-14",
+    "end_date": null,
+    "dates_status": "confirmed"
+   }
+  ],
+  "aliases": [
+   "BSidesRedRocks"
+  ]
+ },
+ "bsides-umea": {
+  "city": "Umeå",
+  "region": null,
+  "country": "SE",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-16",
+    "end_date": null,
+    "dates_status": "confirmed"
+   }
+  ],
+  "aliases": [
+   "BSidesUmeå"
+  ]
+ },
+ "black-hat-usa": {
+  "type": "industry",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-08-01",
+    "end_date": "2026-08-06",
+    "dates_status": "announced"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-07-31",
+    "end_date": "2027-08-05",
+    "dates_status": "announced",
+    "venue": "Mandalay Bay"
+   }
+  ]
+ },
+ "kernelcon": {
+  "description": "Omaha's off-grid-themed con: villages, CTF, hardware hacks; site is JS-only.",
+  "twitter": "@_kernelcon_",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-04-09",
+    "end_date": "2026-04-10",
+    "dates_status": "confirmed",
+    "training_start": "2026-04-07",
+    "url": "https://reg.kernelcon.org/"
+   },
+   {
+    "year": 2027,
+    "start_date": "2027-03-04",
+    "end_date": "2027-03-05",
+    "training_start": "2027-03-02",
+    "training_end": "2027-03-03",
+    "dates_status": "tentative",
+    "venue": "Moxy Omaha Downtown",
+    "notes": "Mar 4-5, 2027 per the Marriott venue listing and 10times; kernelcon.org is JavaScript-only so not read directly. Confirm."
+   }
+  ],
+  "verification_notes": "kernelcon.org renders only with JavaScript; 2027 dates came from the venue's event listing (2026-09-23)."
+ },
+ "bsides-nh": {
+  "remove": true
+ },
+ "bsides-st-louis": {
+  "remove": true
+ },
+ "circle-city-con": {
+  "remove": true
+ },
+ "defcon-franklin": {
+  "remove": true
+ },
+ "hitb": {
+  "remove": true
+ },
+ "hackers-teaching-hackers": {
+  "remove": true
+ },
+ "bsides-philly": {
+  "name": "BSides Philly",
+  "website": "https://bsidesphilly.org/",
+  "city": "Philadelphia",
+  "region": "PA",
+  "country": "US",
+  "attendance_est": 640,
+  "sponsor_url": "https://bsidesphilly.org/sponsor",
+  "twitter": "@bsidesphilly",
+  "village_hosting": "yes",
+  "workshop_track": "yes",
+  "vending_policy": "sponsor-only",
+  "table_cost": "Sponsor packages $100–$10,000",
+  "description": "Community con at Live! Casino & Hotel Philadelphia: talks, workshops, CTF, 640+ practitioners.",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-12-11",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Live! Casino & Hotel Philadelphia"
+   }
+  ],
+  "aliases": [
+   "BSidesPhilly",
+   "bsides Philly"
+  ]
+ },
+ "bsides312": {
+  "mastodon": "https://infosec.exchange/@bsides312",
+  "cfp_url": "https://sessionize.com/bsides312/",
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-05-16",
+    "end_date": null,
+    "dates_status": "announced",
+    "venue": "Irish American Heritage Center"
+   },
+   {
+    "year": 2027,
+    "start_date": null,
+    "end_date": null,
+    "dates_status": "unknown",
+    "notes": "Organizers say 2027 date is TBD; more info in November 2026"
+   }
+  ],
+  "aliases": [
+   "BSides312"
+  ]
+ },
+ "bsides-san-diego": {
+  "aliases": [
+   "BSides San Diego",
+   "BSidesSD",
+   "Bsides SD"
+  ]
+ },
+ "bsides-ok": {
+  "aliases": [
+   "BSides OK",
+   "BSidesOK"
+  ]
+ },
+ "bsides-sf": {
+  "aliases": [
+   "BSidesSF"
+  ]
+ },
+ "bsides-boulder": {
+  "aliases": [
+   "BSidesBoulder"
+  ]
+ },
+ "bsides-london-on": {
+  "aliases": [
+   "BSides London (Canada)",
+   "BSides London Canada",
+   "BSidesLondonCA"
+  ]
+ },
+ "bsides-knoxville": {
+  "aliases": [
+   "BSidesKnoxville"
+  ]
+ },
+ "bsides-denver": {
+  "aliases": [
+   "BSidesDenver"
+  ]
+ },
+ "bsides-bloomington": {
+  "aliases": [
+   "BSidesBloomington"
+  ]
+ },
+ "bsides-marrakesh": {
+  "aliases": [
+   "BSidesMarrakesh"
+  ]
+ },
+ "bsides-seasides": {
+  "aliases": [
+   "BSidesSeaSides"
+  ]
+ },
+ "bsides-luxembourg": {
+  "aliases": [
+   "BSidesLuxembourg"
+  ]
+ },
+ "bsides-albuquerque": {
+  "aliases": [
+   "BSidesAlbuquerque"
+  ]
+ },
+ "bsides-sgf": {
+  "aliases": [
+   "BSidesSGF",
+   "BSidesSpringfield"
+  ]
+ },
+ "el-bsides": {
+  "name": "Elbsides",
+  "website": "https://www.elbsides.eu/",
+  "city": "Hamburg",
+  "country": "DE",
+  "type": "bsides",
+  "aliases": [
+   "EL BSides",
+   "Elbsides Hamburg",
+   "BSides Hamburg"
+  ],
+  "editions": [
+   {
+    "year": 2026,
+    "start_date": "2026-06-05",
+    "end_date": "2026-06-05",
+    "training_start": "2026-06-04",
+    "training_end": "2026-06-04",
+    "dates_status": "announced",
+    "venue": "Hotel Hafen Hamburg"
+   }
+  ],
+  "verification_notes": "'EL BSides' is Elbsides, Hamburg's BSides (Elbe river pun); elbsides.eu (2026-09-23)."
+ }
+}

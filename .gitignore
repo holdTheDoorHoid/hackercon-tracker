@@ -1,0 +1,25 @@
+# private: your database, Gmail token and OAuth client, uploads, spreadsheets
+.venv/
+__pycache__/
+*.pyc
+data/tracker.db*
+data/token.json
+data/credentials.json
+data/uploads/
+data/geocache.json
+data/cache/
+data/*.xlsx
+
+# research scratch: raw feed downloads, crawler output, generated candidate lists, reports
+research/sources/
+research/crawl/
+research/*.log
+research/REPORT.md
+research/make_report.py
+research/makerfaire_*.json
+research/new_conferences.json
+research/targets*.json
+
+# built by scripts/build_site.py (the Pages workflow rebuilds it on every push)
+site/data.json
+site/cities.json

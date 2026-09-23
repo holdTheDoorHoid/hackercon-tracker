@@ -1,0 +1,235 @@
+{% extends "base.html" %}{% import "_macros.html" as m %}
+{% block title %}{{ c.name }} · Hackercon Tracker{% endblock %}
+{% block content %}
+<div class="detail-head card">
+  <div>
+    <h1>{{ c.name }} {{ m.type_badge(c.type) }}{% if c.iot_village_partner %} <span class="badge iot">IoT Village partner</span>{% endif %}{% if c.priority != 'normal' %} <span class="badge">{{ c.priority }} priority</span>{% endif %}{% if c.archived %} <span class="badge bad">archived</span>{% endif %}</h1>
+    <div class="sub">{{ 'Online' if c.online else ((c.city or 'City unknown') ~ (', ' ~ c.region if c.region else '') ~ (' · ' ~ c.country if c.country else '')) }}
+      · {{ travel.label }}{% if c.attendance_n %} · ~{{ '{:,}'.format(c.attendance_n) }} attendees{% elif c.attendance_band %} · {{ c.attendance_band }} attendees{% endif %}
+      {% if aliases|length > 1 %}· <small class="muted">aka {{ aliases|join(', ') }}</small>{% endif %}</div>
+    <div class="linkrow">
+      {% if c.website %}<a class="btn small" href="{{ c.website }}" target="_blank">🌐 Website</a>{% endif %}
+      {% if c.cfp_url %}<a class="btn small" href="{{ c.cfp_url }}" target="_blank">📣 CFP</a>{% endif %}
+      {% if c.cfv_url %}<a class="btn small" href="{{ c.cfv_url }}" target="_blank">🏕 Villages / workshops</a>{% endif %}
+      {% if c.sponsor_url %}<a class="btn small" href="{{ c.sponsor_url }}" target="_blank">🤝 Sponsors</a>{% endif %}
+      {% if c.sponsor_docs_url %}<a class="btn small" href="{{ c.sponsor_docs_url }}" target="_blank">📄 Sponsor docs</a>{% endif %}
+      {% if c.discord_url %}<a class="btn small" href="{{ c.discord_url }}" target="_blank">💬 Discord</a>{% endif %}
+      {% if c.twitter %}<a class="btn small" href="{{ c.twitter if c.twitter.startswith('http') else 'https://x.com/' ~ c.twitter.lstrip('@') }}" target="_blank">𝕏 {{ c.twitter.lstrip('@') if not c.twitter.startswith('http') else 'X' }}</a>{% endif %}
+      {% if c.mastodon %}<a class="btn small" href="{{ c.mastodon }}" target="_blank">🐘 Mastodon</a>{% endif %}
+      {% if c.bluesky %}<a class="btn small" href="{{ c.bluesky if c.bluesky.startswith('http') else 'https://bsky.app/profile/' ~ c.bluesky.lstrip('@') }}" target="_blank">🦋 Bluesky</a>{% endif %}
+      {% if c.linkedin %}<a class="btn small" href="{{ c.linkedin }}" target="_blank">in LinkedIn</a>{% endif %}
+      {% if c.contact_email %}<a class="btn small" href="/email/compose?slug={{ c.slug }}&to={{ c.contact_email }}">✉ {{ c.contact_email }}</a>{% endif %}
+      {% if c.sponsor_email and c.sponsor_email != c.contact_email %}<a class="btn small" href="/email/compose?slug={{ c.slug }}&to={{ c.sponsor_email }}">🤝 {{ c.sponsor_email }}</a>{% endif %}
+      {% if c.cfp_email and c.cfp_email != c.contact_email %}<a class="btn small" href="/email/compose?slug={{ c.slug }}&to={{ c.cfp_email }}">📣 {{ c.cfp_email }}</a>{% endif %}
+    </div>
+  </div>
+  <div class="scorebox">
+    {{ m.score_badge(c.score) }}
+    <div class="scorebox-title">Attend score{% if sel %} · {{ sel.year }}{% endif %}</div>
+    {{ m.score_bars(c.score) }}
+  </div>
+</div>
+
+{% if c.description or c.vending_notes or c.relationship_notes or c.verification_notes or c.hints %}
+<section class="card notes">
+  {% if c.description %}<p>{{ c.description }}</p>{% endif %}
+  {% if c.vending_notes %}<p><b>Vending:</b> {{ c.vending_notes }}{% if c.table_cost %} · <b>Table:</b> {{ c.table_cost }}{% endif %}</p>{% elif c.table_cost %}<p><b>Table cost:</b> {{ c.table_cost }}</p>{% endif %}
+  {% if c.relationship_notes %}<p><b>Relationship:</b> {{ c.relationship_notes }}</p>{% endif %}
+  {% if c.hints %}<p class="muted"><b>Website mentions:</b> {% for h in c.hints %}<span title="{{ h.ctx }}">{{ h.date }}</span>{{ ' · ' if not loop.last }}{% endfor %} <em>(dates found on {{ c.website }}, checked {{ c.hints_checked }}; not verified)</em></p>{% endif %}
+  {% if c.verification_notes %}<p class="muted"><b>Research notes:</b> {{ c.verification_notes }}{% if c.last_verified %} <em>(checked {{ c.last_verified }})</em>{% endif %}</p>{% endif %}
+</section>
+{% endif %}
+
+<div class="cols">
+<section class="card">
+  <h2>Editions
+    <span class="tabs">{% for e in c.editions %}<a class="tab {{ 'active' if sel and e.id == sel.id }}" href="/conferences/{{ c.slug }}?year={{ e.year }}">{{ e.year }}</a>{% endfor %}</span>
+    <form method="post" action="/conferences/{{ c.slug }}/editions" class="inline right"><input type="number" name="year" value="{{ (c.editions[-1].year + 1) if c.editions else today().year }}" style="width:5em"><label class="chk" title="Copy last year's dates and deadlines forward as estimates"><input type="checkbox" name="estimate" value="1" checked> estimate</label><button class="btn small">+ year</button></form>
+  </h2>
+  {% if sel %}
+  <form method="post" action="/editions/{{ sel.id }}/edit" class="form">
+    <div class="row">
+      <label>Start <input type="date" name="start_date" value="{{ sel.start_date or '' }}"></label>
+      <label>End <input type="date" name="end_date" value="{{ sel.end_date or '' }}"></label>
+      <label>Dates are <select name="dates_status">{% for s in DATES_STATUS %}<option value="{{ s }}" {{ 'selected' if sel.dates_status == s }}>{{ s }}</option>{% endfor %}</select></label>
+      <label>Our status <select name="our_status" class="st-{{ sel.our_status }}">{% for s in STATUS_CHOICES %}<option value="{{ s }}" {{ 'selected' if sel.our_status == s }}>{{ s|replace('-', ' ') }}</option>{% endfor %}</select></label>
+    </div>
+    <div class="row">
+      <label>Training start <input type="date" name="training_start" value="{{ sel.training_start or '' }}"></label>
+      <label>Venue <input name="venue" value="{{ sel.venue or '' }}"></label>
+      <label>Edition URL <input name="url" value="{{ sel.url or '' }}" placeholder="https://"></label>
+    </div>
+    <div class="row">
+      <label>Hotel <input name="hotel" value="{{ sel.hotel or '' }}" placeholder="booked / NA / name"></label>
+      <label>Travel <input name="travel" value="{{ sel.travel or '' }}" placeholder="drive / flight booked"></label>
+      <label>PTO <input name="pto" value="{{ sel.pto or '' }}" placeholder="requested / approved"></label>
+      <label>Budget est. $ <input name="budget_est" type="number" step="1" value="{{ sel.budget_est or '' }}"></label>
+    </div>
+    <details {{ 'open' if sel.worth_it or sel.sales or sel.aar_notes }}><summary>After-action (fill in once you're back)</summary>
+      <div class="row">
+        <label>Worth it? <select name="worth_it"><option value="">–</option>{% for i in range(1,6) %}<option value="{{ i }}" {{ 'selected' if sel.worth_it == i }}>{{ i }} {{ ['no','meh','ok','good','great'][i-1] }}</option>{% endfor %}</select></label>
+        <label>Sales $ <input name="sales" type="number" step="1" value="{{ sel.sales or '' }}"></label>
+        <label>Leads <input name="leads" type="number" value="{{ sel.leads or '' }}"></label>
+        <label>Actual attendance <input name="attendance_actual" type="number" value="{{ sel.attendance_actual or '' }}"></label>
+      </div>
+      <label>What happened <textarea name="aar_notes" rows="2">{{ sel.aar_notes or '' }}</textarea></label>
+    </details>
+    <label>Notes for {{ sel.year }} <textarea name="notes" rows="2">{{ sel.notes or '' }}</textarea></label>
+    <div class="row"><button class="btn primary">Save {{ sel.year }}</button>
+      <button class="btn ghost danger" formaction="/editions/{{ sel.id }}/delete" onclick="return confirm('Remove the {{ sel.year }} edition and its deadlines?')">Remove {{ sel.year }}</button>
+      {% if sel.source %}<small class="muted">source: {{ sel.source }}{% if sel.last_verified %}, verified {{ sel.last_verified }}{% endif %}</small>{% endif %}</div>
+  </form>
+
+  {% if conflicts %}
+  <div class="warnbox">⚔️ Overlaps with {% for e in conflicts %}<a href="/conferences/{{ e.slug }}?year={{ e.year }}">{{ e.cname }}</a> ({{ e.score.score }}){{ ', ' if not loop.last }}{% endfor %} · <a href="/compare?date={{ sel.start_date }}">compare</a></div>
+  {% endif %}
+
+  <h3>Deadlines for {{ sel.year }}</h3>
+  <table class="list deadlines">
+  {% for d in ed_dls %}
+    <tr class="{{ 'overdue' if d.due_date and d.due_date < today().isoformat() and d.status in ('open',) }}">
+      <form method="post" action="/deadlines/{{ d.id }}/edit">
+      <td><select name="kind">{% for k in DEADLINE_KINDS %}<option value="{{ k }}" {{ 'selected' if d.kind == k }}>{{ KIND_LABELS[k] }}</option>{% endfor %}</select></td>
+      <td><input type="date" name="due_date" value="{{ d.due_date or '' }}"></td>
+      <td><select name="status">{% for s in DEADLINE_STATUS %}<option value="{{ s }}" {{ 'selected' if d.status == s }}>{{ s }}</option>{% endfor %}</select></td>
+      <td><input name="url" value="{{ d.url or '' }}" placeholder="link"></td>
+      <td><input name="notes" value="{{ d.notes or '' }}" placeholder="notes"></td>
+      <td class="actions"><button class="btn small">Save</button> <button class="btn small ghost" formaction="/deadlines/{{ d.id }}/delete" onclick="return confirm('Delete this deadline?')">✕</button></td>
+      </form>
+    </tr>
+  {% endfor %}
+    <tr class="add"><form method="post" action="/editions/{{ sel.id }}/deadlines">
+      <td><select name="kind">{% for k in DEADLINE_KINDS %}<option value="{{ k }}">{{ KIND_LABELS[k] }}</option>{% endfor %}</select></td>
+      <td><input type="date" name="due_date"></td>
+      <td><select name="status">{% for s in DEADLINE_STATUS %}<option value="{{ s }}">{{ s }}</option>{% endfor %}</select></td>
+      <td><input name="url" placeholder="link"></td><td><input name="notes" placeholder="notes"></td>
+      <td class="actions"><button class="btn small">+ Add</button></td></form></tr>
+  </table>
+  {% else %}<p class="muted">No editions yet — add a year above.</p>{% endif %}
+</section>
+
+<section class="card">
+  <h2>Outreach log <a class="btn small primary right" href="/email/compose?slug={{ c.slug }}">✉ New email</a></h2>
+  <table class="list">
+  {% for o in outreach %}
+    <tr><td class="when"><b>{{ o.date|fmt_date(false) }}</b><br><small class="muted">{{ o.year or '' }}</small></td>
+      <td>{{ '→' if o.direction == 'out' else '←' }} <b>{{ o.channel }}</b> {{ m.status_badge(o.status) }}<br><small>{{ o.subject or '' }}{{ ' — ' if o.subject and o.summary }}{{ o.summary or '' }}</small>{% if o.follow_up_due and o.status in ('sent','no-reply') %}<br><small class="muted">follow up by {{ o.follow_up_due }}</small>{% endif %}</td>
+      <td class="actions">{% if o.gmail_thread_id %}<a class="btn small" href="/email/thread/{{ o.gmail_thread_id }}">Thread</a>{% endif %}
+        <form method="post" action="/outreach/{{ o.id }}/edit" class="inline"><select name="status" onchange="this.form.submit()"><option value="sent" {{ 'selected' if o.status == 'sent' }}>sent</option><option value="replied" {{ 'selected' if o.status == 'replied' }}>replied</option><option value="no-reply" {{ 'selected' if o.status == 'no-reply' }}>no reply</option><option value="meeting" {{ 'selected' if o.status == 'meeting' }}>meeting</option><option value="closed" {{ 'selected' if o.status == 'closed' }}>closed</option></select></form>
+        <form method="post" action="/outreach/{{ o.id }}/delete" class="inline"><button class="btn small ghost" onclick="return confirm('Delete this log entry?')">✕</button></form></td></tr>
+  {% endfor %}
+  </table>
+  <details><summary>Log something that happened outside the app (a call, a web form, a chat)</summary>
+  <form method="post" action="/conferences/{{ c.slug }}/outreach" class="form">
+    <div class="row">
+      <label>Date <input type="date" name="date" value="{{ today().isoformat() }}"></label>
+      <label>Channel <select name="channel"><option>gmail</option><option>web-form</option><option>meeting</option><option>discord</option><option>phone</option><option>other</option></select></label>
+      <label>Direction <select name="direction"><option value="out">we reached out</option><option value="in">they contacted us</option></select></label>
+      <label>Status <select name="status"><option>sent</option><option>replied</option><option>meeting</option><option>closed</option></select></label>
+    </div>
+    <div class="row"><label>Summary <input name="summary" placeholder="Asked about a vendor table"></label><label>Follow up by <input type="date" name="follow_up_due"></label></div>
+    {% if sel %}<input type="hidden" name="edition_id" value="{{ sel.id }}">{% endif %}
+    <button class="btn">Log it</button>
+  </form></details>
+
+  <h2 class="mt">Email threads <small>{{ threads|length }}</small></h2>
+  {% if not threads %}<p class="muted">No emails matched to this conference yet.{% if not gmail.connected %} Connect Gmail in Settings to pull them in.{% endif %}</p>{% endif %}
+  <table class="list">
+  {% for t in threads %}
+    <tr class="{{ 'unread' if t.unread }}"><td class="when"><b>{{ (t.last or '')[:10] }}</b></td>
+      <td><a href="/email/thread/{{ t.id }}">{{ t.subject or '(no subject)' }}</a> <small class="muted">{{ t.count }} msg</small><br><small class="muted">{{ t.from }} — {{ t.snippet }}</small></td></tr>
+  {% endfor %}
+  </table>
+
+  <h2 class="mt">Contacts</h2>
+  <table class="list">
+  {% for ct in contacts %}
+    <tr><td><b>{{ ct.name or '' }}</b> <small class="muted">{{ ct.role or '' }}</small><br><a href="/email/compose?slug={{ c.slug }}&to={{ ct.email }}">{{ ct.email or '' }}</a> {{ ct.phone or '' }}{% if ct.notes %}<br><small>{{ ct.notes }}</small>{% endif %}</td>
+      <td class="actions"><form method="post" action="/contacts/{{ ct.id }}/delete" class="inline"><button class="btn small ghost" onclick="return confirm('Remove contact?')">✕</button></form></td></tr>
+  {% endfor %}
+  </table>
+  <form method="post" action="/conferences/{{ c.slug }}/contacts" class="form row">
+    <input name="name" placeholder="Name"><input name="role" placeholder="Role (sponsor lead…)"><input name="email" placeholder="email" type="email"><input name="notes" placeholder="notes"><button class="btn small">+ Contact</button>
+  </form>
+</section>
+</div>
+
+<section class="card">
+  <details id="edit"><summary><b>Edit conference details</b> (links, contacts, vending policy, location, size…)</summary>
+  <form method="post" action="/conferences/{{ c.slug }}/edit" class="form">
+    <div class="row">
+      <label>Name <input name="name" value="{{ c.name }}"></label>
+      <label>Type <select name="type">{% for t in TYPES %}<option value="{{ t }}" {{ 'selected' if c.type == t }}>{{ t }}</option>{% endfor %}</select></label>
+      <label>Priority <select name="priority">{% for p in ('high','normal','low','ignore') %}<option value="{{ p }}" {{ 'selected' if c.priority == p }}>{{ p }}</option>{% endfor %}</select></label>
+      <label class="chk"><input type="hidden" name="iot_village_partner_present" value="1"><input type="checkbox" name="iot_village_partner" value="1" {{ 'checked' if c.iot_village_partner }}> IoT Village partner</label>
+      <label class="chk"><input type="hidden" name="online_present" value="1"><input type="checkbox" name="online" value="1" {{ 'checked' if c.online }}> Online event</label>
+      <label class="chk"><input type="hidden" name="archived_present" value="1"><input type="checkbox" name="archived" value="1" {{ 'checked' if c.archived }}> Archived</label>
+    </div>
+    <div class="row">
+      <label>City <input name="city" value="{{ c.city or '' }}"></label>
+      <label>State/province <input name="region" value="{{ c.region or '' }}"></label>
+      <label>Country <input name="country" value="{{ c.country or '' }}"></label>
+      <label>Lat <input name="lat" value="{{ c.lat or '' }}"></label>
+      <label>Lon <input name="lon" value="{{ c.lon or '' }}"></label>
+    </div>
+    <div class="row">
+      <label>Attendance (number) <input name="attendance_est" type="number" value="{{ c.attendance_est or '' }}"></label>
+      <label>Attendance band <input name="attendance_band" value="{{ c.attendance_band or '' }}" placeholder="250 - 1000"></label>
+      <label>Usual month <select name="typical_month"><option value="">?</option>{% for i in range(1,13) %}<option value="{{ i }}" {{ 'selected' if c.typical_month == i }}>{{ ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][i-1] }}</option>{% endfor %}</select></label>
+      <label>Pattern <input name="typical_pattern" value="{{ c.typical_pattern or '' }}" placeholder="2nd Saturday of May"></label>
+      <label>Ticket price <input name="ticket_price" value="{{ c.ticket_price or '' }}"></label>
+    </div>
+    <div class="row">
+      <label>Vending <select name="vending_policy">{% for v in ('unknown','yes','sponsor-only','no') %}<option value="{{ v }}" {{ 'selected' if c.vending_policy == v }}>{{ v }}</option>{% endfor %}</select></label>
+      <label>Table cost <input name="table_cost" value="{{ c.table_cost or '' }}" placeholder="$500 / free with sponsorship"></label>
+      <label>Workshop track <select name="workshop_track">{% for v in ('unknown','yes','no') %}<option value="{{ v }}" {{ 'selected' if c.workshop_track == v }}>{{ v }}</option>{% endfor %}</select></label>
+      <label>Hosts villages <select name="village_hosting">{% for v in ('unknown','yes','no') %}<option value="{{ v }}" {{ 'selected' if c.village_hosting == v }}>{{ v }}</option>{% endfor %}</select></label>
+    </div>
+    <label>Vending notes <input name="vending_notes" value="{{ c.vending_notes or '' }}"></label>
+    <div class="row">
+      <label>Website <input name="website" value="{{ c.website or '' }}"></label>
+      <label>CFP link <input name="cfp_url" value="{{ c.cfp_url or '' }}"></label>
+      <label>Villages / workshops link <input name="cfv_url" value="{{ c.cfv_url or '' }}"></label>
+    </div>
+    <div class="row">
+      <label>Sponsor page <input name="sponsor_url" value="{{ c.sponsor_url or '' }}"></label>
+      <label>Sponsor docs (PDF) <input name="sponsor_docs_url" value="{{ c.sponsor_docs_url or '' }}"></label>
+      <label>Discord <input name="discord_url" value="{{ c.discord_url or '' }}"></label>
+    </div>
+    <div class="row">
+      <label>Contact email <input name="contact_email" value="{{ c.contact_email or '' }}"></label>
+      <label>CFP email <input name="cfp_email" value="{{ c.cfp_email or '' }}"></label>
+      <label>Sponsor email <input name="sponsor_email" value="{{ c.sponsor_email or '' }}"></label>
+    </div>
+    <div class="row">
+      <label>X / Twitter <input name="twitter" value="{{ c.twitter or '' }}" placeholder="@handle"></label>
+      <label>Mastodon <input name="mastodon" value="{{ c.mastodon or '' }}" placeholder="https://infosec.exchange/@…"></label>
+      <label>Bluesky <input name="bluesky" value="{{ c.bluesky or '' }}"></label>
+      <label>LinkedIn <input name="linkedin" value="{{ c.linkedin or '' }}"></label>
+      <label>Instagram <input name="instagram" value="{{ c.instagram or '' }}"></label>
+      <label>YouTube <input name="youtube" value="{{ c.youtube or '' }}"></label>
+    </div>
+    <label>Description <textarea name="description" rows="2">{{ c.description or '' }}</textarea></label>
+    <label>Relationship notes <textarea name="relationship_notes" rows="2">{{ c.relationship_notes or '' }}</textarea></label>
+    <div class="row">
+      <label>Past rating (1-5) <input name="past_rating" type="number" min="1" max="5" value="{{ c.past_rating or '' }}"></label>
+      <label>Past sales $ <input name="past_sales" type="number" value="{{ c.past_sales or '' }}"></label>
+      <label>Past notes <input name="past_notes" value="{{ c.past_notes or '' }}"></label>
+    </div>
+    <label>General notes <textarea name="notes" rows="3">{{ c.notes or '' }}</textarea></label>
+    <label>Research / verification notes <textarea name="verification_notes" rows="2">{{ c.verification_notes or '' }}</textarea></label>
+    <div class="row"><button class="btn primary">Save details</button>
+      <button class="btn ghost danger" formaction="/conferences/{{ c.slug }}/delete" onclick="return confirm('Delete {{ c.name }} and everything attached to it? This cannot be undone.')">Delete conference</button></div>
+  </form>
+  </details>
+</section>
+
+{% if all_dls|length > ed_dls|length %}
+<section class="card"><details><summary>All deadlines, every year</summary>
+<table class="list">{% for d in all_dls %}<tr><td class="when"><b>{{ d.year }}</b></td><td>{{ KIND_LABELS.get(d.kind, d.kind) }} · {{ d.due_date or 'no date' }} · {{ d.status }}{% if d.notes %} · <small>{{ d.notes }}</small>{% endif %}</td></tr>{% endfor %}</table>
+</details></section>
+{% endif %}
+{% if activity %}
+<section class="card"><details><summary>History</summary><ul class="activity">{% for a in activity %}<li><small class="muted">{{ a.ts[:16] }}</small> {{ a.message }}</li>{% endfor %}</ul></details></section>
+{% endif %}
+{% endblock %}

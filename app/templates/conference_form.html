@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Add conference · Hackercon Tracker{% endblock %}
+{% block content %}
+<section class="card narrow">
+  <h2>Add a conference</h2>
+  <form method="post" action="/conferences/new" class="form">
+    <label>Name <input name="name" required placeholder="BSides Somewhere"></label>
+    <div class="row">
+      <label>Type <select name="type">{% for t in TYPES %}<option value="{{ t }}">{{ t }}</option>{% endfor %}</select></label>
+      <label>Website <input name="website" placeholder="https://"></label>
+    </div>
+    <div class="row">
+      <label>City <input name="city"></label>
+      <label>State / province <input name="region" placeholder="PA"></label>
+      <label>Country <input name="country" value="US" placeholder="US"></label>
+    </div>
+    <div class="row">
+      <label>Year <input name="year" type="number" value="{{ today().year }}"></label>
+      <label>Start date <input name="start_date" type="date"></label>
+      <label>End date <input name="end_date" type="date"></label>
+      <label>Dates are <select name="dates_status">{% for s in DATES_STATUS %}<option value="{{ s }}" {{ 'selected' if s == 'announced' }}>{{ s }}</option>{% endfor %}</select></label>
+    </div>
+    <div class="row">
+      <label>Expected attendance <input name="attendance_est" type="number"></label>
+      <label>Vending <select name="vending_policy"><option value="unknown">unknown</option><option value="yes">yes</option><option value="sponsor-only">sponsor-only</option><option value="no">no</option></select></label>
+      <label>Workshop track <select name="workshop_track"><option value="unknown">unknown</option><option value="yes">yes</option><option value="no">no</option></select></label>
+    </div>
+    <div class="row">
+      <label>Contact email <input name="contact_email"></label>
+      <label>Discord <input name="discord_url"></label>
+      <label>CFP link <input name="cfp_url"></label>
+    </div>
+    <label>Notes <textarea name="notes" rows="3"></textarea></label>
+    <div class="row"><button class="btn primary">Add conference</button> <a class="btn ghost" href="/conferences">Cancel</a></div>
+  </form>
+</section>
+{% endblock %}

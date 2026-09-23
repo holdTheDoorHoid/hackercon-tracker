@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% block title %}Settings · Hackercon Tracker{% endblock %}
+{% block content %}
+<div class="cols">
+<section class="card" id="gmail">
+  <h2>✉ Gmail</h2>
+  {% if gmail.connected %}
+    <p class="okbox">Connected as <b>{{ gmail.email }}</b>.</p>
+    <form method="post" action="/gmail/disconnect"><button class="btn ghost" onclick="return confirm('Disconnect Gmail? Cached emails stay; you can reconnect any time.')">Disconnect</button></form>
+  {% elif gmail.configured %}
+    <p>Credentials file found. Click to sign in with Google and grant access.</p>
+    <a class="btn primary" href="/gmail/connect">Connect Gmail</a>
+  {% else %}
+    <p>Not set up yet. It takes about 10 minutes, once:</p>
+    <ol>
+      <li>Follow <b>GMAIL-SETUP.md</b> in the project folder (creates a free Google "OAuth client").</li>
+      <li>Save the downloaded file as <code>{{ cred_path }}</code>.</li>
+      <li>Reload this page and click <b>Connect Gmail</b>.</li>
+    </ol>
+    <p class="muted"><small>Until then the Email page shows sample data.</small></p>
+  {% endif %}
+  <form method="post" action="/settings" class="form mt">
+    <div class="row">
+      <label>Gmail label prefix <input name="gmail_label_prefix" value="{{ settings.gmail_label_prefix }}"></label>
+      <label>Sync window <input name="gmail_sync_query" value="{{ settings.gmail_sync_query }}" placeholder="newer_than:2y"></label>
+      <label>Follow-up reminder after (days) <input name="followup_days" type="number" value="{{ settings.followup_days }}"></label>
+    </div>
+    <button class="btn">Save</button>
+  </form>
+</section>
+
+<section class="card" id="scoring">
+  <h2>🎯 Scoring &amp; home base</h2>
+  <form method="post" action="/settings" class="form">
+    <div class="row">
+      <label>Home city <input name="home_city" placeholder="e.g. Denver"></label>
+      <label>State / province <input name="home_region" placeholder="CO"></label>
+      <label>Country <input name="home_country" value="US"></label>
+    </div>
+    <p class="muted"><small>{% if settings.home_lat %}Currently: {{ settings.home_label }} ({{ settings.home_lat }}, {{ settings.home_lon }}). Leave blank to keep.{% else %}<b>Not set yet.</b> Travel time and the score's travel part need this.{% endif %}</small></p>
+    <div class="row">
+      <label>Drive up to (hours) <input name="drive_max_hours" type="number" step="0.5" value="{{ settings.drive_max_hours }}"></label>
+      <label>Average mph <input name="avg_mph" type="number" value="{{ settings.avg_mph }}"></label>
+      <label>Book hotel (days before) <input name="hotel_lead_days" type="number" value="{{ settings.hotel_lead_days }}"></label>
+      <label>Book flights (days before) <input name="flight_lead_days" type="number" value="{{ settings.flight_lead_days }}"></label>
+    </div>
+    <h3>Weights <small>how much each factor counts</small></h3>
+    <div class="row">
+      <label>Size <input name="weight_size" type="number" value="{{ settings.weight_size }}"></label>
+      <label>Travel ease <input name="weight_travel" type="number" value="{{ settings.weight_travel }}"></label>
+      <label>Vending <input name="weight_vending" type="number" value="{{ settings.weight_vending }}"></label>
+      <label>Workshop <input name="weight_workshop" type="number" value="{{ settings.weight_workshop }}"></label>
+      <label>PTO <input name="weight_pto" type="number" value="{{ settings.weight_pto }}"></label>
+      <label>Past results <input name="weight_past" type="number" value="{{ settings.weight_past }}"></label>
+    </div>
+    <div class="row">
+      <label>Your name (for templates) <input name="owner_name" value="{{ settings.owner_name }}"></label>
+      <label>Organization <input name="org_name" value="{{ settings.org_name }}"></label>
+    </div>
+    <button class="btn primary">Save settings</button>
+  </form>
+</section>
+</div>
+
+<section class="card" id="templates">
+  <h2>📝 Email templates</h2>
+  {% for t in tmpls %}
+  <details class="tmpl"><summary><b>{{ t.name }}</b> <small class="muted">{{ t.subject }}</small></summary>
+    <form method="post" action="/templates" class="form"><input type="hidden" name="id" value="{{ t.id }}">
+      <div class="row"><label>Name <input name="name" value="{{ t.name }}"></label><label>Subject <input name="subject" value="{{ t.subject or '' }}"></label></div>
+      <label>Body <textarea name="body" rows="10">{{ t.body or '' }}</textarea></label>
+      <div class="row"><button class="btn">Save</button><button class="btn ghost danger" formaction="/templates/{{ t.id }}/delete" onclick="return confirm('Delete template?')">Delete</button></div>
+    </form></details>
+  {% endfor %}
+  <details class="tmpl"><summary>+ New template</summary>
+    <form method="post" action="/templates" class="form">
+      <div class="row"><label>Name <input name="name" required></label><label>Subject <input name="subject"></label></div>
+      <label>Body <textarea name="body" rows="8" placeholder="Hi {{ '{{conference}}' }} team, …"></textarea></label>
+      <button class="btn">Create</button>
+    </form></details>
+</section>
+
+<section class="card" id="refresh">
+  <h2>🔄 Keep the data fresh</h2>
+  <p>The app pulls dates and CFP deadlines from <a href="https://bsides.org/events/" target="_blank" rel="noopener">bsides.org</a>,
+    <a href="https://makerfaire.com/map/" target="_blank" rel="noopener">makerfaire.com</a>, <a href="https://www.cfptime.org/" target="_blank" rel="noopener">cfptime.org</a> and
+    <a href="https://cfp.hex.dance/" target="_blank" rel="noopener">cfp.hex.dance</a>, and can read each unconfirmed conference's website for date mentions.
+    It only fills blanks, moves dates and deadlines, and adds new editions or new US/Canada BSides and Maker Faires. Your statuses, notes and anything marked <b>confirmed</b> are never touched.</p>
+  <p><small class="muted">Last refresh: <b>{{ settings.last_refresh or 'never' }}</b>{% if last_refresh_msg %} · {{ last_refresh_msg }}{% endif %}
+    · bundled dataset: {{ settings.seed_applied or '—' }}</small></p>
+  <form method="post" action="/settings" class="form">
+    <div class="row">
+      <label>Refresh automatically every (days, 0 = never) <input name="auto_refresh_days" type="number" min="0" value="{{ settings.auto_refresh_days }}"></label>
+      <label class="chk"><input type="hidden" name="refresh_hints_form" value="1"><input type="checkbox" name="refresh_hints" value="1" {{ 'checked' if settings.refresh_hints == '1' }}> also scan websites for date hints</label>
+    </div>
+    <button class="btn">Save</button>
+    <button class="btn primary" formaction="/settings/refresh">Refresh now</button>
+    <button class="btn ghost" formaction="/settings/reseed" title="Merge the dataset that ships with the app (after a git pull) without touching your edits">Apply bundled dataset</button>
+  </form>
+</section>
+
+<div class="cols">
+<section class="card" id="data">
+  <h2>💾 Data</h2>
+  <p><a class="btn" href="/export/xlsx">Download spreadsheet (.xlsx)</a> <a class="btn" href="/export/ics">Download calendar (.ics)</a></p>
+  <p class="muted"><small>Calendar subscription URL (paste into Google Calendar → Other calendars → From URL, while the app is running): <code>{{ base_url }}/calendar.ics</code> — add <code>?mine=1</code> for only the ones you're going to.</small></p>
+  <form method="post" action="/settings/import" enctype="multipart/form-data" class="form">
+    <label>Re-import a spreadsheet in the original layout <input type="file" name="file" accept=".xlsx"></label>
+    <label class="chk"><input type="checkbox" name="overwrite" value="1"> overwrite existing values (otherwise only fills blanks)</label>
+    <button class="btn">Import</button>
+  </form>
+  {% if suppressed %}
+  <p class="muted mt"><small>Deleted conferences that updates will not bring back: {% for s in suppressed %}<code>{{ s }}</code>
+    <form method="post" action="/settings/unsuppress" style="display:inline"><input type="hidden" name="slug" value="{{ s }}"><button class="btn small ghost" title="Allow the next update to add it again">forget</button></form> {% endfor %}</small></p>
+  {% endif %}
+  <p class="muted"><small>Database: <code>{{ db_path }}</code> · {{ stats.conferences }} conferences, {{ stats.emails }} cached emails. Back it up by copying that one file.</small></p>
+</section>
+<section class="card" id="sources">
+  <h2>🔎 Where to look for new conferences</h2>
+  <ul class="sources">{% for s in sources %}<li><a href="{{ s.url }}" target="_blank">{{ s.name or s.url }}</a>{% if s.notes %} <small class="muted">— {{ s.notes }}</small>{% endif %} <form method="post" action="/sources/{{ s.id }}/delete" class="inline"><button class="btn small ghost">✕</button></form></li>{% endfor %}</ul>
+  <form method="post" action="/sources" class="form row"><input name="name" placeholder="Name"><input name="url" placeholder="https://"><input name="notes" placeholder="notes"><button class="btn small">+ Add</button></form>
+</section>
+</div>
+{% endblock %}

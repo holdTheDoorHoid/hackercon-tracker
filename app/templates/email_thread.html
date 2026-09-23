@@ -1,0 +1,24 @@
+{% extends "base.html" %}{% import "_macros.html" as m %}
+{% block title %}Thread · Hackercon Tracker{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>{{ (msgs[0].subject if msgs else (live[0].subject if live else 'Thread')) }}</h2>
+  <div class="row">
+    <form method="post" action="/email/assign" class="inline"><input type="hidden" name="thread_id" value="{{ thread_id }}"><input type="hidden" name="next" value="/email/thread/{{ thread_id }}">
+      Conference: <select name="conference_id"><option value="">— none —</option>{% for c in confs %}<option value="{{ c.id }}" {{ 'selected' if conf and c.id == conf.conference_id }}>{{ c.name }}</option>{% endfor %}</select>
+      {% if gmail.connected %}<label class="chk"><input type="checkbox" name="label" value="1" checked> also label in Gmail</label>{% endif %}
+      <button class="btn small">Save</button></form>
+    {% if conf and conf.slug %}<a class="btn small" href="/conferences/{{ conf.slug }}">Open {{ conf.cname }}</a>{% endif %}
+    {% set last = live[-1] if live else (msgs[-1] if msgs else none) %}
+    {% if last %}<a class="btn small primary" href="/email/compose?slug={{ conf.slug if conf and conf.slug else '' }}&thread={{ thread_id }}&to={{ (last['from'] if live else last.from_addr)|urlencode }}&subject={{ ('Re: ' ~ (last.subject or ''))|urlencode }}&reply_to={{ (last.message_id if live else '')|urlencode }}">↩ Reply</a>{% endif %}
+    {% if gmail.connected %}<a class="btn small ghost" target="_blank" href="https://mail.google.com/mail/u/0/#all/{{ thread_id }}">Open in Gmail</a>{% endif %}
+  </div>
+  {% set shown = live if live else msgs %}
+  {% for mm in shown %}
+  <article class="msg {{ 'sent' if (('SENT' in mm.labels) if live else mm.is_sent) }}">
+    <header><b>{{ mm['from'] if live else mm.from_addr }}</b> → {{ mm.to if live else mm.to_addr }} <span class="muted right">{{ mm.date if live else (mm.date or '')[:16] }}</span></header>
+    <pre>{{ mm.body if live else (mm.body_text or mm.snippet) }}</pre>
+  </article>
+  {% endfor %}
+</section>
+{% endblock %}

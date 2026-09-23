@@ -1,0 +1,19 @@
+{% extends "base.html" %}{% import "_macros.html" as m %}
+{% block title %}Compare · Hackercon Tracker{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Side-by-side {% if d %}<small>around {{ d|fmt_date }}</small>{% endif %}
+    <form class="inline right" method="get">Weekend of <input type="date" name="date" value="{{ d }}"> <button class="btn small">Go</button></form></h2>
+  {% if not eds %}<p class="muted">Pick a date to see everything happening that weekend.</p>{% endif %}
+  <div class="compare">
+  {% for e in eds %}
+    <div class="compare-card {{ 'top' if loop.first }}">
+      <div class="compare-head">{{ m.score_badge(e.score) }} <a href="/conferences/{{ e.slug }}?year={{ e.year }}"><b>{{ e.cname }}</b></a>{% if loop.first and eds|length > 1 %} <span class="badge ok">best pick</span>{% endif %}</div>
+      <div class="sub">{{ e.start_date|fmt_range(e.end_date) }} {{ m.dates_badge(e.dates_status) }}<br>{{ 'Online' if e.online else ((e.city or '') ~ (', ' ~ e.region if e.region else '') ~ (' · ' ~ e.country if e.country and e.country != 'US' else '')) }}</div>
+      {{ m.score_bars(e.score) }}
+      <div class="sub">{{ m.quick_status(e, '/compare?date=' ~ d) }}</div>
+    </div>
+  {% endfor %}
+  </div>
+</section>
+{% endblock %}

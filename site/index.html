@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hackercon Tracker</title>
+<meta name="description" content="Upcoming hacker, BSides and maker events: dates, CFP deadlines and links, in one place.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎪</text></svg>">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">🎪</span>
+    <div><h1>Hackercon Tracker</h1><p>Hacker, BSides and maker events, with dates, deadlines and links in one place.</p></div></div>
+  <form class="home" id="homeForm">
+    <label>Your home city <input id="homeInput" placeholder="e.g. Denver, CO" autocomplete="off"></label>
+    <button class="primary" type="submit">Set</button>
+    <button class="ghost" type="button" id="homeClear" title="Forget home city">✕</button>
+    <span id="homeStatus" class="muted"></span>
+  </form>
+</header>
+<nav class="views">
+  <a href="#/list" data-view="list" class="active">List</a>
+  <a href="#/cal" data-view="cal">Calendar</a>
+  <a href="#/map" data-view="map">Map</a>
+  <span class="meta" id="meta"></span>
+</nav>
+<section class="filters">
+  <input id="q" type="search" placeholder="Search name, city, venue, description…">
+  <select id="type"><option value="">All types</option></select>
+  <select id="country"><option value="">All countries</option></select>
+  <select id="month"><option value="">Any month</option></select>
+  <select id="status">
+    <option value="">Any date status</option>
+    <option value="firm">Announced or confirmed</option>
+    <option value="estimated">Estimated only</option>
+  </select>
+  <label class="chk" title="Set your home city first"><input type="checkbox" id="drive" disabled> Driveable (≤ 6 h)</label>
+  <label class="chk"><input type="checkbox" id="past"> Include past events</label>
+  <button class="ghost" id="reset" type="button">Reset</button>
+</section>
+<main>
+  <div id="list" class="view"></div>
+  <div id="cal" class="view" hidden><div id="calendar"></div></div>
+  <div id="map" class="view" hidden><div id="leaflet"></div></div>
+</main>
+<div id="backdrop" class="backdrop" hidden></div>
+<aside id="detail" class="drawer" hidden></aside>
+<footer>
+  <span id="foot"></span>
+  Dates come from <a href="https://bsides.org/events/">bsides.org</a>, <a href="https://makerfaire.com/map/">makerfaire.com</a>,
+  <a href="https://www.cfptime.org/">cfptime.org</a>, <a href="https://cfp.hex.dance/">cfp.hex.dance</a> and each event's own website;
+  "estimated" means nobody has announced it yet and we guessed the same weekend as last year. Not affiliated with any event.
+  Distances are computed in your browser and never sent anywhere.
+  Want deadlines, outreach and Gmail tracking for your own list? <a href="https://github.com/holdTheDoorHoid/hackercon-tracker">Run the full tracker</a>.
+</footer>
+<script src="vendor/fullcalendar.min.js"></script>
+<script src="vendor/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

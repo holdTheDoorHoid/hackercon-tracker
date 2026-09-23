@@ -1,0 +1,36 @@
+{% extends "base.html" %}{% import "_macros.html" as m %}
+{% block title %}Email · Hackercon Tracker{% endblock %}
+{% block content %}
+<div class="email-layout">
+<aside class="card">
+  {% if gmail.connected %}
+  <form method="post" action="/email/sync"><button class="btn primary wide">⟳ Sync Gmail now</button></form>
+  <p class="muted"><small>Connected as {{ gmail.email }}{% if settings.gmail_last_sync %}<br>last sync {{ settings.gmail_last_sync }}{% endif %}</small></p>
+  {% else %}
+  <div class="warnbox">Sample mode — these are made-up emails so you can see how it works. <a href="/settings#gmail">Connect Gmail</a> to load the real thing.</div>
+  {% endif %}
+  <nav class="side">
+    <a href="/email?view=all" class="{{ 'active' if view == 'all' }}">All threads <span>{{ counts.all }}</span></a>
+    <a href="/email?view=unread" class="{{ 'active' if view == 'unread' }}">Unread <span>{{ counts.unread }}</span></a>
+    <a href="/email?view=unassigned" class="{{ 'active' if view == 'unassigned' }}">Not matched to a con <span>{{ counts.unassigned }}</span></a>
+    <a href="/email?view=sent" class="{{ 'active' if view == 'sent' }}">Sent</a>
+  </nav>
+  <a class="btn wide" href="/email/compose">✉ New email</a>
+  <form method="get" class="mt"><input type="hidden" name="view" value="{{ view }}"><input type="search" name="q" value="{{ q }}" placeholder="Search subject / sender"></form>
+</aside>
+<section class="card">
+  <table class="list threads">
+  {% for t in threads %}
+    <tr class="{{ 'unread' if t.unread }}">
+      <td class="when"><b>{{ (t.last or '')[:10] }}</b></td>
+      <td><a href="/email/thread/{{ t.id }}">{{ t.subject or '(no subject)' }}</a> <small class="muted">{{ t.count }}</small><br><small class="muted">{{ t.from }} — {{ (t.snippet or '')[:110] }}</small></td>
+      <td class="assign"><form method="post" action="/email/assign"><input type="hidden" name="thread_id" value="{{ t.id }}"><input type="hidden" name="next" value="/email?view={{ view }}">
+        <select name="conference_id" onchange="this.form.submit()"><option value="">— no conference —</option>{% for c in confs %}<option value="{{ c.id }}" {{ 'selected' if c.id == t.conference_id }}>{{ c.name }}</option>{% endfor %}</select></form></td>
+    </tr>
+  {% else %}
+    <tr><td class="muted">Nothing here.</td></tr>
+  {% endfor %}
+  </table>
+</section>
+</div>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}{% import "_macros.html" as m %}
+{% block title %}Conferences · Hackercon Tracker{% endblock %}
+{% block content %}
+<form class="filters card" method="get">
+  <input type="search" name="q" value="{{ q }}" placeholder="Name or city…">
+  <select name="type"><option value="">Any type</option>{% for t in TYPES %}<option value="{{ t }}" {{ 'selected' if type == t }}>{{ t }}</option>{% endfor %}</select>
+  <select name="region"><option value="">Anywhere</option><option value="us-ca" {{ 'selected' if region == 'us-ca' }}>US + Canada</option><option value="drive" {{ 'selected' if region == 'drive' }}>Driveable / online</option></select>
+  <select name="country"><option value="">Any country</option>{% for c in countries %}<option value="{{ c }}" {{ 'selected' if country == c }}>{{ c }}</option>{% endfor %}</select>
+  <select name="status"><option value="">Any status</option>{% for s in STATUS_CHOICES %}<option value="{{ s }}" {{ 'selected' if status == s }}>{{ s|replace('-', ' ') }}</option>{% endfor %}</select>
+  <select name="month"><option value="">Any month</option>{% for i in range(1,13) %}<option value="{{ i }}" {{ 'selected' if month and month|int == i }}>{{ ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][i-1] }}</option>{% endfor %}</select>
+  <select name="sort"><option value="date" {{ 'selected' if sort == 'date' }}>Sort: next date</option><option value="score" {{ 'selected' if sort == 'score' }}>Sort: score</option><option value="size" {{ 'selected' if sort == 'size' }}>Sort: size</option><option value="name" {{ 'selected' if sort == 'name' }}>Sort: name</option></select>
+  <label class="chk"><input type="checkbox" name="archived" value="1" {{ 'checked' if archived }}> archived too</label>
+  <button class="btn">Filter</button> <a class="btn ghost" href="/conferences">Reset</a>
+  <span class="muted right">{{ confs|length }} of {{ total }}</span>
+</form>
+
+<table class="grid card">
+  <thead><tr><th>Next dates</th><th>Conference</th><th>Where</th><th>Getting there</th><th>Size</th><th>Score</th><th>Status</th><th>Links</th></tr></thead>
+  <tbody>
+  {% for c in confs %}{% set n = c.next or {} %}
+    <tr class="{{ 'past' if n.start_date and n.start_date < today().isoformat() }}">
+      <td class="nowrap">{% if n.start_date %}{{ n.start_date|fmt_range(n.end_date) }}{% else %}<span class="muted">{{ n.year or '' }} TBD</span>{% endif %} {{ m.dates_badge(n.dates_status) }}</td>
+      <td><a href="/conferences/{{ c.slug }}"><b>{{ c.name }}</b></a> {{ m.type_badge(c.type) }}{% if c.iot_village_partner %} <span class="badge iot" title="IoT Village partner">IoT</span>{% endif %}{% if c.priority == 'high' %} ★{% endif %}</td>
+      <td>{{ 'Online' if c.online else ((c.city or '?') ~ (', ' ~ c.region if c.region else '') ~ ((' · ' ~ c.country) if c.country and c.country != 'US' else '')) }}</td>
+      <td><small>{{ c.score.travel.label }}</small></td>
+      <td><small>{{ c.attendance_n|default('?', true) if c.attendance_n else (c.attendance_band or '?') }}</small></td>
+      <td>{{ m.score_badge(c.score) }}</td>
+      <td>{{ m.status_badge(n.our_status) }}</td>
+      <td class="links">{% if c.website %}<a href="{{ c.website }}" target="_blank" title="Website">🌐</a>{% endif %}{% if c.cfp_url %}<a href="{{ c.cfp_url }}" target="_blank" title="CFP">📣</a>{% endif %}{% if c.discord_url %}<a href="{{ c.discord_url }}" target="_blank" title="Discord">💬</a>{% endif %}{% if c.contact_email or c.sponsor_email %}<a href="/email/compose?slug={{ c.slug }}" title="Email them">✉</a>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

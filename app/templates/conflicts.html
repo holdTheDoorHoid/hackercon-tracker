@@ -1,0 +1,34 @@
+{% extends "base.html" %}{% import "_macros.html" as m %}
+{% block title %}Conflicts · Hackercon Tracker{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>⚔️ Same-weekend conflicts <small>next 14 months</small>
+    <form class="inline right" method="get">ignore events scoring below <input type="number" name="min_score" value="{{ min_score }}" style="width:4em"> <button class="btn small">Apply</button></form></h2>
+  <p class="muted">Events whose dates overlap (give or take a day). The top pick in each group is the highest score; the bars show why. Declined, rejected, skipped and ignored events are left out.</p>
+  {% if not clusters %}<p>No overlaps found with these settings.</p>{% endif %}
+  {% for g in clusters %}
+  <div class="cluster">
+    <h3>{{ g[0].start_date|fmt_range(g[-1].end_date or g[-1].start_date) }} <a class="btn small" href="/compare?date={{ g[0].start_date }}">Side-by-side</a></h3>
+    <table class="grid">
+      <thead><tr><th>Score</th><th>Conference</th><th>Dates</th><th>Where</th><th>Travel</th><th>Size</th><th>Vending</th><th>Workshop</th><th>PTO</th><th>Status</th></tr></thead>
+      <tbody>
+      {% for e in g %}
+      <tr class="{{ 'top' if loop.first }}">
+        <td>{{ m.score_badge(e.score) }}</td>
+        <td><a href="/conferences/{{ e.slug }}?year={{ e.year }}"><b>{{ e.cname }}</b></a> {{ m.type_badge(e.type) }}</td>
+        <td class="nowrap">{{ e.start_date|fmt_range(e.end_date) }} {{ m.dates_badge(e.dates_status) }}</td>
+        <td>{{ 'Online' if e.online else ((e.city or '') ~ (', ' ~ e.region if e.region else '')) }}</td>
+        <td><small>{{ e.score.parts.travel.why }}</small></td>
+        <td><small>{{ e.score.parts.size.why }}</small></td>
+        <td><small>{{ e.score.parts.vending.why }}</small></td>
+        <td><small>{{ e.score.parts.workshop.why }}</small></td>
+        <td><small>{{ e.score.parts.pto.why }}</small></td>
+        <td>{{ m.quick_status(e, '/conflicts?min_score=' ~ min_score) }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endfor %}
+</section>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Compose · Hackercon Tracker{% endblock %}
+{% block content %}
+<section class="card narrow">
+  <h2>{{ 'Reply' if thread else 'New email' }}{% if conf %} · {{ conf.name }}{% endif %}</h2>
+  {% if not gmail.connected %}<div class="warnbox">Gmail isn't connected, so <b>Send</b> won't work yet — but you can still write here and copy the text into Gmail. <a href="/settings#gmail">Connect Gmail</a>.</div>{% endif %}
+  <form method="post" action="/email/send" class="form" id="compose">
+    <input type="hidden" name="thread" value="{{ thread }}"><input type="hidden" name="reply_to" value="{{ reply_to }}">
+    <div class="row">
+      <label>Conference <select name="slug" onchange="location='/email/compose?slug='+this.value">{% if not conf %}<option value="">— pick one (fills in details) —</option>{% endif %}{% for c in confs %}<option value="{{ c.slug }}" {{ 'selected' if conf and c.slug == conf.slug }}>{{ c.name }}</option>{% endfor %}</select></label>
+      <label>Template <select onchange="if(this.value)location='/email/compose?slug={{ slug }}&template='+this.value+'{% if thread %}&thread={{ thread }}&reply_to={{ reply_to|urlencode }}&to={{ to|urlencode }}{% endif %}'"><option value="">— pick a template —</option>{% for t in tmpls %}<option value="{{ t.id }}">{{ t.name }}</option>{% endfor %}</select></label>
+    </div>
+    <label>To <input name="to" value="{{ to }}" list="contacts" required placeholder="sponsors@example.org"></label>
+    <datalist id="contacts">{% for ct in contacts %}<option value="{{ ct.email }}">{{ ct.name }} {{ ct.role }}</option>{% endfor %}{% if conf and conf.contact_email %}<option value="{{ conf.contact_email }}">contact</option>{% endif %}{% if conf and conf.sponsor_email %}<option value="{{ conf.sponsor_email }}">sponsor</option>{% endif %}{% if conf and conf.cfp_email %}<option value="{{ conf.cfp_email }}">CFP</option>{% endif %}</datalist>
+    <label>Cc <input name="cc" placeholder="optional"></label>
+    <label>Subject <input name="subject" value="{{ subject }}" required></label>
+    <label>Message <textarea name="body" rows="16">{{ body }}</textarea></label>
+    <div class="row">
+      <button class="btn primary" name="action" value="send" onclick="return confirm('Send this email now from your Gmail?')">Send from Gmail</button>
+      <button class="btn" name="action" value="draft">Save as Gmail draft</button>
+      <button class="btn ghost" type="button" onclick="navigator.clipboard.writeText(document.querySelector('[name=body]').value);this.textContent='Copied!'">Copy text</button>
+      <a class="btn ghost" href="{{ '/conferences/' ~ conf.slug if conf else '/email' }}">Cancel</a>
+    </div>
+    <p class="muted"><small>Placeholders you can use in templates: <code>{{ '{{conference}}' }}</code> <code>{{ '{{city}}' }}</code> <code>{{ '{{year}}' }}</code> <code>{{ '{{dates}}' }}</code> <code>{{ '{{org}}' }}</code> <code>{{ '{{me}}' }}</code>. Sending logs an outreach entry with a follow-up reminder and labels the thread in Gmail.</small></p>
+  </form>
+</section>
+{% endblock %}

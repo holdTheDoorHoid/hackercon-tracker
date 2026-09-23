@@ -1,0 +1,103 @@
+{% extends "base.html" %}{% import "_macros.html" as m %}
+{% block content %}
+{% if home_missing %}<div class="flash warn">👋 Welcome. <a href="/settings#scoring">Set your home city in Settings</a> so drive times and the travel part of each score work. Everything else already works.</div>{% endif %}
+<div class="stats">
+  <a class="stat" href="/conferences"><b>{{ counts.total }}</b><span>conferences tracked</span></a>
+  <a class="stat" href="/conferences?sort=date"><b>{{ counts.upcoming }}</b><span>events in next 120 days</span></a>
+  <a class="stat" href="/conferences?status=accepted"><b>{{ counts.going }}</b><span>applied / accepted / attending</span></a>
+  <a class="stat" href="#deadlines"><b>{{ counts.deadlines }}</b><span>deadlines in 45 days</span></a>
+  <a class="stat" href="/email?view=unread"><b>{{ unread }}</b><span>unread emails</span></a>
+</div>
+
+<div class="cols">
+<section class="card" id="deadlines">
+  <h2>⏰ Deadlines <small>next 45 days</small></h2>
+  {% if not deadlines %}<p class="muted">Nothing due in the next 45 days.</p>{% endif %}
+  <table class="list">
+  {% for d in deadlines %}
+    {% set left = d.due_date|days_until %}
+    <tr class="{{ 'overdue' if left < 0 else ('soon' if left <= 7) }}">
+      <td class="when"><b>{{ d.due_date|fmt_date(false) }}</b><br><small>{% if left < 0 %}{{ -left }}d ago{% elif left == 0 %}today{% else %}in {{ left }}d{% endif %}</small></td>
+      <td><a href="/conferences/{{ d.slug }}?year={{ d.year }}">{{ d.cname }}</a> <small class="muted">{{ d.year }}</small><br><small>{{ KIND_LABELS.get(d.kind, d.kind) }}{% if d.label %} · {{ d.label }}{% endif %}{% if d.url %} · <a href="{{ d.url }}" target="_blank">link</a>{% endif %}</small></td>
+      <td><form method="post" action="/deadlines/{{ d.id }}/edit" class="inline"><input type="hidden" name="kind" value="{{ d.kind }}"><select name="status" onchange="this.form.submit()">{% for s in DEADLINE_STATUS %}<option value="{{ s }}" {{ 'selected' if d.status == s }}>{{ s }}</option>{% endfor %}</select></form></td>
+    </tr>
+  {% endfor %}
+  </table>
+</section>
+
+<section class="card">
+  <h2>📨 Follow-ups <small>no reply after {{ settings.followup_days }} days</small></h2>
+  {% if not followups %}<p class="muted">No outreach is waiting on a reply.</p>{% endif %}
+  <table class="list">
+  {% for o in followups %}
+    <tr><td class="when"><b>{{ o.date|fmt_date(false) }}</b></td>
+      <td><a href="/conferences/{{ o.slug }}">{{ o.cname }}</a><br><small>{{ o.channel }} · {{ o.summary or o.subject or '' }}</small></td>
+      <td class="actions"><a class="btn small" href="/email/compose?slug={{ o.slug }}{% if o.gmail_thread_id %}&thread={{ o.gmail_thread_id }}{% endif %}">Follow up</a>
+        <form method="post" action="/outreach/{{ o.id }}/edit" class="inline"><input type="hidden" name="status" value="closed"><button class="btn small ghost" title="Stop reminding me">✕</button></form></td></tr>
+  {% endfor %}
+  </table>
+  {% if logistics %}
+  <h2 class="mt">🏨 Logistics to book</h2>
+  <table class="list">
+  {% for e, need in logistics %}
+    <tr><td class="when"><b>{{ e.start_date|fmt_date(false) }}</b><br><small>in {{ e.start_date|days_until }}d</small></td>
+      <td><a href="/conferences/{{ e.slug }}?year={{ e.year }}">{{ e.cname }}</a><br><small>Book: {{ need|join(' + ') }} · {{ e.score.travel.label }}</small></td></tr>
+  {% endfor %}
+  </table>
+  {% endif %}
+  {% if unconfirmed %}
+  <h2 class="mt">❓ Dates to confirm <small>upcoming, not yet announced</small></h2>
+  <table class="list">
+  {% for e in unconfirmed %}
+    <tr><td class="when"><b>{{ e.start_date|fmt_date(false) }}</b></td>
+      <td><a href="/conferences/{{ e.slug }}?year={{ e.year }}">{{ e.cname }}</a> {{ m.dates_badge(e.dates_status) }}
+        {% if e.hints %}<br><small class="muted" title="{{ e.hints|map(attribute='ctx')|join(' … ') }}">Website mentions: {{ e.hints|map(attribute='date')|join(' · ') }}</small>{% endif %}</td></tr>
+  {% endfor %}
+  </table>
+  {% endif %}
+</section>
+</div>
+
+<section class="card">
+  <h2>📅 Upcoming events <small>next 120 days, by date</small> <a class="btn small ghost right" href="/calendar">Calendar view</a></h2>
+  <table class="grid">
+    <thead><tr><th>Dates</th><th>Conference</th><th>Where</th><th>Getting there</th><th>Size</th><th>Score</th><th>Our status</th></tr></thead>
+    <tbody>
+    {% for e in upcoming %}
+      <tr>
+        <td class="nowrap">{{ e.start_date|fmt_range(e.end_date) }} {{ m.dates_badge(e.dates_status) }}</td>
+        <td><a href="/conferences/{{ e.slug }}?year={{ e.year }}"><b>{{ e.cname }}</b></a> {{ m.type_badge(e.type) }}</td>
+        <td>{{ 'Online' if e.online else ((e.city or '') ~ (', ' ~ e.region if e.region else '') ~ ((' · ' ~ e.country) if e.country and e.country not in ('US',) else '')) }}</td>
+        <td><small>{{ e.score.travel.label }}</small></td>
+        <td><small>{{ e.score.parts.size.why }}</small></td>
+        <td>{{ m.score_badge(e.score) }}</td>
+        <td>{{ m.quick_status(e, '/') }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+{% if conflicts %}
+<section class="card">
+  <h2>⚔️ Same-weekend conflicts <small>where two or more decent options collide</small> <a class="btn small ghost right" href="/conflicts">All conflicts</a></h2>
+  <div class="conflict-row">
+  {% for g in conflicts %}
+    <div class="conflict">
+      <div class="conflict-head">{{ g[0].start_date|fmt_range(g[-1].end_date or g[-1].start_date) }} <a href="/compare?date={{ g[0].start_date }}" class="btn small">Compare</a></div>
+      {% for e in g %}
+        <div class="conflict-item {{ 'top' if loop.first }}">{{ m.score_badge(e.score) }} <a href="/conferences/{{ e.slug }}?year={{ e.year }}">{{ e.cname }}</a> <small class="muted">{{ e.city or '' }} · {{ e.score.travel.mode }}</small> {{ m.status_badge(e.our_status) }}</div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="card">
+  <h2>🕘 Recent activity</h2>
+  <ul class="activity">
+  {% for a in activity %}<li><small class="muted">{{ a.ts[:16] }}</small> {% if a.slug %}<a href="/conferences/{{ a.slug }}">{% endif %}{{ a.message }}{% if a.slug %}</a>{% endif %}</li>{% endfor %}
+  </ul>
+</section>
+{% endblock %}

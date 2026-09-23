@@ -1,0 +1,33 @@
+{% macro score_badge(sc) -%}
+<span class="score g{{ grade(sc.score) }}" title="{% for k,p in sc.parts.items() %}{{ k }}: {{ p.score }} ({{ p.why }})&#10;{% endfor %}{{ sc.flags|join(', ') }}">{{ sc.score }}<small>{{ grade(sc.score) }}</small></span>
+{%- endmacro %}
+
+{% macro status_badge(s) -%}
+<span class="badge st-{{ s or 'considering' }}">{{ (s or 'considering')|replace('-', ' ') }}</span>
+{%- endmacro %}
+
+{% macro dates_badge(s) -%}
+{% if s in ('tentative','estimated') %}<span class="badge tent" title="Not yet announced by the organizers">{{ s }}</span>{% elif s in ('cancelled','postponed') %}<span class="badge bad">{{ s }}</span>{% elif s == 'unknown' %}<span class="badge tent">dates unknown</span>{% endif %}
+{%- endmacro %}
+
+{% macro type_badge(t) -%}
+<span class="badge type-{{ t }}">{{ t }}</span>
+{%- endmacro %}
+
+{% macro score_bars(sc) -%}
+<table class="bars">
+{% for k,p in sc.parts.items() %}
+<tr><th>{{ {'size':'Size','travel':'Travel','vending':'Vending','workshop':'Workshop','pto':'PTO','past':'Past'}[k] }} <small>×{{ p.weight|int }}</small></th>
+<td><div class="bar"><div style="width:{{ p.score }}%"></div></div></td><td class="num">{{ p.score }}</td><td class="why">{{ p.why }}</td></tr>
+{% endfor %}
+{% if sc.flags %}<tr><td colspan="4" class="flags">{{ sc.flags|join(' · ') }}</td></tr>{% endif %}
+</table>
+{%- endmacro %}
+
+{% macro quick_status(ed, next_url) -%}
+<form method="post" action="/quick/edition-status" class="inline">
+<input type="hidden" name="edition_id" value="{{ ed.id }}"><input type="hidden" name="next" value="{{ next_url }}">
+<select name="our_status" class="st-{{ ed.our_status or 'considering' }}" onchange="this.form.submit()">
+{% for s in STATUS_CHOICES %}<option value="{{ s }}" {{ 'selected' if (ed.our_status or 'considering') == s }}>{{ s|replace('-', ' ') }}</option>{% endfor %}
+</select></form>
+{%- endmacro %}
