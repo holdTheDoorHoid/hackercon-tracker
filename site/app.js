@@ -143,7 +143,16 @@
       state.layer.addLayer(m); pts.push([c.lat, c.lon]);
     }
     if (state.home) state.layer.addLayer(L.circleMarker([state.home.lat, state.home.lon], { radius: 9, color: "#222", weight: 2, fillColor: "#ffd43b", fillOpacity: 1 }).bindTooltip("Home: " + state.home.label));
-    setTimeout(() => { state.map.invalidateSize(); if (pts.length) state.map.fitBounds(pts, { padding: [30, 30], maxZoom: 7 }); }, 30);
+    setTimeout(() => fitMap(pts), 30);
+  }
+  function fitMap(pts, tries = 0) {
+    // The container can still be 0×0 right after the view is shown (or mid-resize); fitting then
+    // gives a nonsense zoom. Wait for a real size, then fit.
+    if (!state.map || !pts.length) return;
+    state.map.invalidateSize();
+    const sz = state.map.getSize();
+    if ((sz.x < 50 || sz.y < 50) && tries < 20) { setTimeout(() => fitMap(pts, tries + 1), 250); return; }
+    state.map.fitBounds(pts, { padding: [30, 30], maxZoom: 7 });
   }
   function render() {
     const rs = rows();
