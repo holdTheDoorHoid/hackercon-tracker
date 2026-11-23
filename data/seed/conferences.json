@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16",
+ "generated": "2026-11-23",
  "conferences": [
   {
    "slug": "44con",
@@ -48,7 +48,7 @@
    "lat": 51.5074,
    "lon": -0.1278,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "unprompted",
@@ -113,7 +113,7 @@
    "lon": -122.4194,
    "type": "hacker",
    "typical_month": 10,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "apres-cyber-slopes",
@@ -128,7 +128,7 @@
        "kind": "cfp",
        "label": null,
        "due_date": "2026-11-21",
-       "status": "open",
+       "status": "closed",
        "url": "https://www.aprescyber.com/",
        "notes": null
       }
@@ -204,7 +204,7 @@
    "lon": 8.5417,
    "typical_month": 6,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -281,7 +281,7 @@
    "last_verified": "2026-09-23",
    "lat": 38.9366852,
    "lon": -77.185843,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "balccon",
@@ -342,7 +342,7 @@
    "lon": 19.8335,
    "typical_month": 9,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -395,7 +395,7 @@
    "lat": 46.8721,
    "lon": -113.994,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "black-hat-europe",
@@ -525,7 +525,7 @@
    "lon": -87.6298,
    "typical_month": 9,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -679,7 +679,7 @@
    "last_verified": "2026-09-23",
    "lat": 51.0281381,
    "lon": 4.4803453,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-albany",
@@ -787,7 +787,7 @@
    "last_verified": "2026-09-23",
    "lat": 35.0844,
    "lon": -106.6504,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-atlanta",
@@ -848,7 +848,7 @@
    "lat": 33.749,
    "lon": -84.388,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-berlin",
@@ -919,7 +919,7 @@
    "lat": 52.52,
    "lon": 13.405,
    "typical_month": 11,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-birmingham",
@@ -971,7 +971,7 @@
    "lat": 52.4948994,
    "lon": -1.8518439,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-birmingham-usa",
@@ -1054,7 +1054,7 @@
    "last_verified": "2026-09-23",
    "lat": 39.1653,
    "lon": -86.5264,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-boulder",
@@ -1119,7 +1119,7 @@
    "lon": -105.2705,
    "typical_month": 6,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-bozeman",
@@ -1270,7 +1270,7 @@
      "ctx": "e Conference 2027 CFP Get Involved Sponsorship Blog Contact June 5, 2027 BSides Buffalo 6.0 - Hack Around And Find Out! Canisius Uni"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-cache",
@@ -1333,7 +1333,7 @@
      "ctx": "ealth Sciences Building 1301 North 600 West Logan, UT 84321 September 17, 2027 Grab Your Ticket BSidesCache is run by a 501(c)(3) non-prof"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-calgary",
@@ -1381,7 +1381,7 @@
    "lon": -114.0719,
    "typical_month": 5,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-cambridge-ma",
@@ -1455,7 +1455,7 @@
    "lat": 42.3876,
    "lon": -71.0995,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-charleston",
@@ -1535,7 +1535,7 @@
    "lon": -79.9311,
    "typical_month": 11,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsidescharm",
@@ -1649,7 +1649,7 @@
    "last_verified": "2026-09-23",
    "lat": 41.8781,
    "lon": -87.6298,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-cleveland",
@@ -1706,7 +1706,7 @@
    "lat": 41.4993,
    "lon": -81.6944,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-clt",
@@ -1760,7 +1760,7 @@
    "lat": 35.2271,
    "lon": -80.8431,
    "typical_month": 3,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-columbus",
@@ -1818,7 +1818,7 @@
    "last_verified": "2026-09-23",
    "lat": 39.8428215,
    "lon": -82.805646,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-ct",
@@ -1888,7 +1888,7 @@
    "lon": -73.2613,
    "typical_month": 9,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-dayton",
@@ -2015,21 +2015,8 @@
    "last_verified": "2026-09-23",
    "lat": 39.6837,
    "lon": -75.7497,
-   "date_hints": [
-    {
-     "date": "November 13 – 14, 2026",
-     "ctx": "ue and Hotel Tickets // Light Security BSides Delaware 2026 November 13 – 14, 2026 Fintech Innovation Hub, University of Delaware 591 Collabor"
-    },
-    {
-     "date": "November 16, 2026",
-     "ctx": "oo long. – Katina All blog posts → From Mastodon (no title) November 16, 2026 📢 SPONSOR SPOTLIGHT: White Cell Exercises! 🚀A huge thank yo"
-    },
-    {
-     "date": "November 14, 2026",
-     "ctx": "ations that care about fostering local tech, […] (no title) November 14, 2026 Want to try hacking qubits? Check out @quantum_village's BS"
-    }
-   ],
-   "hints_checked": "2026-11-16"
+   "date_hints": [],
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-denver",
@@ -2080,7 +2067,7 @@
    "last_verified": "2026-09-23",
    "lat": 39.7392,
    "lon": -104.9903,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-detroit",
@@ -2124,7 +2111,7 @@
    "lat": 42.3314,
    "lon": -83.0458,
    "typical_month": 5,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-dfw",
@@ -2201,7 +2188,7 @@
    "last_verified": "2026-09-23",
    "lat": 32.7767,
    "lon": -96.797,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-dsm",
@@ -2241,7 +2228,7 @@
    "last_verified": "2026-09-23",
    "lat": 41.7320796,
    "lon": -93.605092,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-edmonton",
@@ -2368,7 +2355,7 @@
    "last_verified": "2026-09-23",
    "lat": 40.3267,
    "lon": -78.922,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-fort-wayne",
@@ -2418,7 +2405,7 @@
    "lat": 41.0793,
    "lon": -85.1394,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-frankfurt",
@@ -2493,7 +2480,7 @@
    "lon": 8.6821,
    "typical_month": 9,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-fredericton",
@@ -2539,7 +2526,7 @@
    "last_verified": "2026-09-23",
    "lat": 45.9636,
    "lon": -66.6431,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-galway",
@@ -2643,7 +2630,7 @@
    "lat": 34.8526,
    "lon": -82.394,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-groningen",
@@ -2792,7 +2779,7 @@
    "lat": 36.8508,
    "lon": -76.2859,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-hbg",
@@ -2909,7 +2896,7 @@
    "lat": 29.7604,
    "lon": -95.3698,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-idaho-falls",
@@ -3228,7 +3215,7 @@
    "lat": 36.1699,
    "lon": -115.1398,
    "typical_month": 8,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-leeds",
@@ -3516,7 +3503,7 @@
    "lat": 49.503,
    "lon": 5.947,
    "typical_month": 5,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-memphis",
@@ -3566,7 +3553,7 @@
    "last_verified": "2026-09-23",
    "lat": 35.1495,
    "lon": -90.049,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-milwaukee",
@@ -3772,7 +3759,7 @@
    "lat": 38.8816,
    "lon": -77.091,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-nyc",
@@ -3844,7 +3831,7 @@
    "lat": 40.7128,
    "lon": -74.006,
    "typical_month": 10,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-ok",
@@ -3909,7 +3896,7 @@
    "lat": 35.9551,
    "lon": -96.0089,
    "typical_month": 4,
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "date_hints": [
     {
      "date": "April 5-9, 2027",
@@ -3993,7 +3980,7 @@
    "last_verified": "2026-09-23",
    "lat": 28.5383,
    "lon": -81.3792,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-peoria",
@@ -4075,7 +4062,7 @@
      "ctx": "Call for Papers Call for Volunteers BSides Peoria Saturday, October 23rd, 2027 - Bradley University - Peoria, Illinois 00 Days 00 Hours 00"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-philly",
@@ -4567,7 +4554,7 @@
    "lon": -79.9414,
    "typical_month": 6,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-roc",
@@ -4692,7 +4679,7 @@
    "lat": 32.7157,
    "lon": -117.1611,
    "typical_month": 4,
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "date_hints": [
     {
      "date": "March 27, 2027",
@@ -4844,13 +4831,8 @@
    "lat": 37.7749,
    "lon": -122.4194,
    "typical_month": 3,
-   "hints_checked": "2026-11-16",
-   "date_hints": [
-    {
-     "date": "November 13th, 2026",
-     "ctx": "r CFP . Please make sure to submit by our final deadline of November 13th, 2026 . See the link for more details. Work With Us! Want to be a"
-    }
-   ]
+   "hints_checked": "2026-11-23",
+   "date_hints": []
   },
   {
    "slug": "bsides-sgf",
@@ -5034,7 +5016,7 @@
    "lon": -75.1118,
    "typical_month": 4,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-space-coast",
@@ -5118,7 +5100,7 @@
    "lat": 47.5615,
    "lon": -52.7126,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-st-pete",
@@ -5205,7 +5187,7 @@
    "last_verified": "2026-09-23",
    "lat": 38.627,
    "lon": -90.1994,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-tampa",
@@ -5274,8 +5256,29 @@
    "lat": 27.9506,
    "lon": -82.4572,
    "typical_month": 5,
-   "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "date_hints": [
+    {
+     "date": "Dec 31, 2026",
+     "ctx": "ets: $45, Monday, November 23 The call for proposals closes Dec 31, 2026 at 5 PM EST. Tickets go on sale Monday, November 23. The Bl"
+    },
+    {
+     "date": "April 17, 2027",
+     "ctx": "munity-run security conference. Conference Day is Saturday, April 17, 2027 at the USF Marshall Student Center , Tampa . Friday, April"
+    },
+    {
+     "date": "December 31, 2026",
+     "ctx": "or registered trainees only. Call for proposals: open until December 31, 2026 at 5 PM EST ~/2027/call_for_proposals.md ~/2027/call_for_pr"
+    },
+    {
+     "date": "April 16, 2027",
+     "ctx": "t alerts When and where the event fri · apr 16 16 _ Friday, April 16, 2027 : Training Day: registered trainees and early check-in No t"
+    },
+    {
+     "date": "January 31, 2027",
+     "ctx": "match 2026, and the main levels stay at 2026 prices through January 31, 2027. The prospectus is ready to forward to your approver. Apply"
+    }
+   ],
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-tlv",
@@ -5352,7 +5355,7 @@
    "lat": 32.0852997,
    "lon": 34.7818064,
    "typical_month": 11,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-toronto",
@@ -5460,7 +5463,7 @@
    "last_verified": "2026-09-23",
    "lat": 49.2827,
    "lon": -123.1207,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-vi",
@@ -5517,7 +5520,7 @@
    "lat": 48.4284,
    "lon": -123.3656,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-saskatoon",
@@ -5572,7 +5575,7 @@
    "last_verified": "2026-09-23",
    "lat": 52.1332,
    "lon": -106.67,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides312",
@@ -5637,13 +5640,8 @@
    "lat": 41.8781,
    "lon": -87.6298,
    "typical_month": 5,
-   "date_hints": [
-    {
-     "date": "June 13, 2027",
-     "ctx": "BSides312 — Chicago's Security BSides Hacking Conference | June 13, 2027 Home Contribute Volunteer Speak Event Past Speakers Venue &"
-    }
-   ],
-   "hints_checked": "2026-11-16"
+   "date_hints": [],
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-augusta",
@@ -5700,7 +5698,7 @@
    "lon": -82.0105,
    "typical_month": 10,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-cos",
@@ -5754,7 +5752,7 @@
    "lat": 38.8339,
    "lon": -104.8214,
    "typical_month": 10,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-ics-ot",
@@ -5814,7 +5812,7 @@
    "lat": 25.7617,
    "lon": -80.1918,
    "typical_month": 2,
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "date_hints": [
     {
      "date": "February 8, 2027",
@@ -5997,7 +5995,7 @@
      "ctx": "Twitter LinkedIn hello@bsidesmtl.ca FR BSides Montreal 2027 September 11th 2027 Grande Bibliothèque - BAnQ (475 Boul. de Maisonneuve E, Mon"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-nepa",
@@ -6074,7 +6072,7 @@
    "lon": -75.8813,
    "typical_month": 9,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-ot-uk",
@@ -6152,6 +6150,24 @@
      "venue": "BSidesOttawa",
      "dates_status": "announced",
      "last_verified": "2026-09-23"
+    },
+    {
+     "year": 2027,
+     "deadlines": [
+      {
+       "kind": "cfp",
+       "label": null,
+       "due_date": "2027-09-21",
+       "status": "open",
+       "url": null,
+       "notes": "Estimated from last year's deadline"
+      }
+     ],
+     "source": "estimated from previous year",
+     "start_date": "2027-11-18",
+     "end_date": "2027-11-19",
+     "dates_status": "estimated",
+     "notes": "Estimated: same weekend as 2026 (2026-11-19). Confirm on the website."
     }
    ],
    "source": "spreadsheet",
@@ -6173,7 +6189,9 @@
    "sponsor_docs_url": "https://www.bsidesottawa.ca/BSides%20Ottawa%202026%20Sponsorship%20Guide.pdf",
    "last_verified": "2026-09-23",
    "lat": 45.4215,
-   "lon": -75.6972
+   "lon": -75.6972,
+   "typical_month": 11,
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-pdx",
@@ -6244,7 +6262,7 @@
      "ctx": "December 1st help us get a bigger boat, and prices go up on January 1st, 2027. About BSides PDX BSides Portland is a tax-exempt charitabl"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-satx",
@@ -6415,7 +6433,7 @@
      "start_date": "2027-06-11",
      "end_date": "2027-06-12",
      "dates_status": "announced",
-     "last_verified": "2026-11-16",
+     "last_verified": "2026-11-23",
      "venue": "BSidesSWFL"
     }
    ],
@@ -6551,7 +6569,7 @@
    "lat": 63.8258,
    "lon": 20.263,
    "typical_month": 6,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "bsides-zadar",
@@ -6607,7 +6625,7 @@
    "lon": 15.2314,
    "typical_month": 9,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "burning-river-cyber-con",
@@ -6681,13 +6699,8 @@
    "last_verified": "2026-09-23",
    "lat": 41.4993,
    "lon": -81.6944,
-   "date_hints": [
-    {
-     "date": "Nov 14, 2026",
-     "ctx": "sed Sept 18, 2026 [*] Location >> Cleveland, OH [*] Date >> Nov 14, 2026, 09:00 to 17:00 [*] Schedule >> /schedule.html [*] Mission"
-    }
-   ],
-   "hints_checked": "2026-11-16"
+   "date_hints": [],
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "c0c0n",
@@ -6754,19 +6767,19 @@
    "typical_month": 10,
    "date_hints": [
     {
-     "date": "21-23 Sep 2027",
-     "ctx": "d continues. See You at c0c0n 2027! Pre-Conference Training 21-23 Sep 2027 Main Conference 24-25 Sep 2027 Post-Conference Training 26-"
+     "date": "21-23 Sep, 2027",
+     "ctx": "XX - the 20th anniversary edition. Pre-Conference Trainings 21-23 Sep, 2027 Conference 24-25 Sep, 2027 Post-Conference Trainings 26-28"
     },
     {
-     "date": "24-25 Sep 2027",
-     "ctx": "027! Pre-Conference Training 21-23 Sep 2027 Main Conference 24-25 Sep 2027 Post-Conference Training 26-28 Sep 2027 Stay connected. Sta"
+     "date": "24-25 Sep, 2027",
+     "ctx": "dition. Pre-Conference Trainings 21-23 Sep, 2027 Conference 24-25 Sep, 2027 Post-Conference Trainings 26-28 Sep, 2027 Grand Hyatt, Koch"
     },
     {
-     "date": "26-28 Sep 2027",
-     "ctx": "027 Main Conference 24-25 Sep 2027 Post-Conference Training 26-28 Sep 2027 Stay connected. Stay curious. Stay secure. REGISTRATIONS OP"
+     "date": "26-28 Sep, 2027",
+     "ctx": ", 2027 Conference 24-25 Sep, 2027 Post-Conference Trainings 26-28 Sep, 2027 Grand Hyatt, Kochi, India 000 Days 00 Hours 00 Mins 00 Secs"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "cackalackycon",
@@ -6929,7 +6942,7 @@
    "last_verified": "2026-09-23",
    "lat": 49.2827,
    "lon": -123.1207,
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "date_hints": []
   },
   {
@@ -7015,7 +7028,7 @@
    "lat": 35.7796,
    "lon": -78.6382,
    "type": "hacker",
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "ccc-camp",
@@ -7047,7 +7060,7 @@
    "last_verified": "2026-09-23",
    "lat": 51.2899215,
    "lon": 8.2874153,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "ccc-congress",
@@ -7135,13 +7148,8 @@
    "lon": -90.5776,
    "type": "hacker",
    "typical_month": 10,
-   "hints_checked": "2026-11-16",
-   "date_hints": [
-    {
-     "date": "October 1-2, 2027",
-     "ctx": "ship Volunteer Updates X Facebook YouTube Instagram Join us October 1-2, 2027 for CORNCON 13 CornCon Links: • CornCon 12 – Oct 2-3, 2026"
-    }
-   ]
+   "hints_checked": "2026-11-23",
+   "date_hints": []
   },
   {
    "slug": "counterspy",
@@ -7185,7 +7193,7 @@
    "lat": 33.749,
    "lon": -84.388,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -7285,7 +7293,7 @@
    "lon": -97.114,
    "typical_month": 3,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -7338,19 +7346,11 @@
    "lon": -6.2603,
    "date_hints": [
     {
-     "date": "13-14 November 2026",
-     "ctx": "eer --> Detection Engineering and Threat Hunting Conference 13-14 November 2026 Worldwide Tickets for all sites available now DATE 13-14 No"
-    },
-    {
-     "date": "13-14 Nov 2026",
-     "ctx": "shop recordings and materials are due from workshop leaders 13-14 Nov 2026: Conference! 31 Dec 2026: Lab will remain available at leas"
-    },
-    {
      "date": "31 Dec 2026",
      "ctx": "s are due from workshop leaders 13-14 Nov 2026: Conference! 31 Dec 2026: Lab will remain available at least until end of year. Feb/"
     }
    ],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -7367,6 +7367,15 @@
      "end_date": "2026-11-20",
      "dates_status": "announced",
      "last_verified": "2026-09-23"
+    },
+    {
+     "year": 2027,
+     "deadlines": [],
+     "source": "estimated from previous year",
+     "start_date": "2027-11-16",
+     "end_date": "2027-11-19",
+     "dates_status": "estimated",
+     "notes": "Estimated: same weekend as 2026 (2026-11-17). Confirm on the website."
     }
    ],
    "website": "https://deepsec.net/",
@@ -7384,7 +7393,14 @@
    "sponsor_url": "https://deepsec.net/speaker.html#PSLOT832",
    "last_verified": "2026-09-23",
    "lat": 48.2082,
-   "lon": 16.3738
+   "lon": 16.3738,
+   "date_hints": [
+    {
+     "date": "20 November 2026",
+     "ctx": ". DeepSec 2026 is coming! DeepSec 2026 will be on 17/18/19/20 November 2026. The call for papers is open! DeepSec Impressions If you do"
+    }
+   ],
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "defcon-singapore",
@@ -7585,7 +7601,7 @@
    "sponsor_url": "https://www.dianainitiative.org/sponsors-donors/sponsors-2026",
    "typical_month": 5,
    "type": "hacker",
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "districtcon",
@@ -7707,7 +7723,7 @@
    "last_verified": "2026-09-23",
    "lat": -34.6095579,
    "lon": -58.3887904,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "ekoparty-miami",
@@ -7758,7 +7774,7 @@
    "lat": 25.7907,
    "lon": -80.13,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -7805,7 +7821,7 @@
    "lon": 9.9937,
    "typical_month": 6,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "emf-camp",
@@ -7829,7 +7845,7 @@
    "last_verified": "2026-09-23",
    "lat": 52.0326918,
    "lon": -2.3910882,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "grrcon",
@@ -7892,7 +7908,7 @@
    "lon": -85.6522523,
    "type": "hacker",
    "typical_month": 9,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "guildcon",
@@ -7918,6 +7934,23 @@
      "last_verified": "2026-09-23",
      "end_date": null,
      "venue": "Hackers Guild Pittsburgh, 2247 Babcock Blvd"
+    },
+    {
+     "year": 2027,
+     "deadlines": [
+      {
+       "kind": "cfp",
+       "label": null,
+       "due_date": "2027-10-01",
+       "status": "open",
+       "url": "https://guildcon.hackersguildpgh.com/",
+       "notes": "Estimated from last year's deadline"
+      }
+     ],
+     "source": "estimated from previous year",
+     "start_date": "2027-11-20",
+     "dates_status": "estimated",
+     "notes": "Estimated: same weekend as 2026 (2026-11-21). Confirm on the website."
     }
    ],
    "city": "Pittsburgh",
@@ -7935,7 +7968,14 @@
    "description": "Hackers Guild Pittsburgh's community con: talks, paid hands-on workshops (e.g. IoT reverse engineering), CTF, family-friendly.",
    "last_verified": "2026-09-23",
    "lat": 40.4406,
-   "lon": -79.9959
+   "lon": -79.9959,
+   "date_hints": [
+    {
+     "date": "November 21, 2026",
+     "ctx": "ing Guild Con 2026 Pittsburgh's Community Hacker Conference November 21, 2026 | Pittsburgh, PA Register Now About Guild Con Join us for a"
+    }
+   ],
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "hack-glasgow",
@@ -7992,7 +8032,7 @@
      "ctx": "gether, we Hack Glasgow. Next scheduled event DATE Saturday 31st July 2027 LOCATION Citizens Theatre, Glasgow, G5 9DS Get Tickets Abou"
     }
    ],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -8057,7 +8097,7 @@
    "lon": -80.1218486,
    "typical_month": 5,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -8146,7 +8186,7 @@
    "lon": -80.649,
    "typical_month": 5,
    "type": "hacker",
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "hack-lu",
@@ -8207,7 +8247,7 @@
    "lon": 6.136,
    "type": "hacker",
    "typical_month": 10,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "hackaday-supercon",
@@ -8250,7 +8290,7 @@
    "last_verified": "2026-09-23",
    "lat": 34.1478,
    "lon": -118.1445,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "hacker-halted",
@@ -8305,7 +8345,7 @@
      "ctx": "October 10th – October 13th, 2027 Cybersecurity Conference October 14th & 15th, 2027 in Atlanta, GA Hacker Halted 2026: Cyber Carnival Where Ill"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "hackfest",
@@ -8391,7 +8431,7 @@
      "ctx": "AUJOURD'HUI × Dernières nouvelles ‹ 1 / 12 › RSS POLAR 2027 21 oct. 2027 Journée banquet pour gestionnaires en sécurité de l'informa"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "hack-the-bay",
@@ -8441,7 +8481,7 @@
    "lat": 37.7749,
    "lon": -122.4194,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -8486,7 +8526,7 @@
    "lon": -76.8485094,
    "type": "hacker",
    "typical_month": 9,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "hardwear-io-usa",
@@ -8535,19 +8575,11 @@
    "typical_month": 5,
    "date_hints": [
     {
-     "date": "16th - 18th November 2026",
-     "ctx": "wear.io Security Trainings and Conference NL 2026 Training: 16th - 18th November 2026 | Conference: 19th - 20th November 2026 Venue: Amsterdam Ma"
-    },
-    {
-     "date": "19th - 20th November 2026",
-     "ctx": "e NL 2026 Training: 16th - 18th November 2026 | Conference: 19th - 20th November 2026 Venue: Amsterdam Marriott Hotel REGISTRATION IS NOW OPEN! H"
-    },
-    {
-     "date": "16th – 20th November 2026",
-     "ctx": "? Hosted at the Amsterdam Marriott Hotel, Netherlands, from 16th – 20th November 2026, Hardwear.io NL 2026 brings together researchers, engineers"
+     "date": "17th – 21st May 2027",
+     "ctx": "ardwear.io Security Trainings and Conference USA 2027 Date: 17th – 21st May 2027 Venue: Marriott Santa Clara, California, USA Hardwear.io is"
     }
    ],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -8564,6 +8596,15 @@
      "end_date": "2026-11-20",
      "dates_status": "announced",
      "last_verified": "2026-09-23"
+    },
+    {
+     "year": 2027,
+     "deadlines": [],
+     "source": "estimated from previous year",
+     "start_date": "2027-11-15",
+     "end_date": "2027-11-19",
+     "dates_status": "estimated",
+     "notes": "Estimated: same weekend as 2026 (2026-11-16). Confirm on the website."
     }
    ],
    "website": "https://hardwear.io/",
@@ -8584,7 +8625,14 @@
    "cfv_url": "https://hardwear.io/nl-2026/trainings/",
    "last_verified": "2026-09-23",
    "lat": 52.3676,
-   "lon": 4.9041
+   "lon": 4.9041,
+   "date_hints": [
+    {
+     "date": "17th – 21st May 2027",
+     "ctx": "ardwear.io Security Trainings and Conference USA 2027 Date: 17th – 21st May 2027 Venue: Marriott Santa Clara, California, USA Hardwear.io is"
+    }
+   ],
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "hexacon",
@@ -8629,7 +8677,7 @@
    "last_verified": "2026-09-23",
    "lat": 48.8566,
    "lon": 2.3522,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "hope",
@@ -8687,7 +8735,7 @@
      "ctx": "01. The organization’s first annual report will be filed by May 15, 2027. Address for Requests: HOPE On Planet Earth, 248 Route 25A,"
     }
    ],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -8743,7 +8791,7 @@
      "ctx": "tors Villages Resources Merch Store Podcast Press & Media ​ September 22 - 23, 2027 Get Tickets George R. Brown Convention Center 1001 Avenida"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "ics-cyber-security-conference",
@@ -8787,7 +8835,7 @@
    "lat": 36.1627,
    "lon": -86.7816,
    "typical_month": 10,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "ieee-sp",
@@ -8887,7 +8935,7 @@
      "ctx": "foSec World 2027 | Learn from the Top Cybersecurity Experts September 20-22, 2027 Gaylord Rockies Resort & Convention Center • Denver, Colora"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "insomnihack",
@@ -9095,7 +9143,7 @@
    "lon": -75.1515534,
    "type": "hacker",
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "kernelcon",
@@ -9156,7 +9204,7 @@
    "lat": 41.2565,
    "lon": -95.9345,
    "type": "hacker",
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "labscon",
@@ -9252,7 +9300,7 @@
    "lon": -71.0589,
    "typical_month": 6,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -9316,7 +9364,7 @@
    "lon": -118.242766,
    "typical_month": 5,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -9378,7 +9426,7 @@
      "ctx": "ng. Send us your speech hints at CFP before Saturday noon ! 28/06/2026 01:00 - 02:30 WORKSHOP: GeoGuessr Party EN Salle Louis Arma"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-ashville",
@@ -9436,7 +9484,7 @@
      "ctx": "sources Media Center 2023 Featured Makers A-B Tech Saturday April 10, 2027 10-3 View the 2024 Video Recap! Previous Next What is Maker"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-baton-rouge",
@@ -9487,7 +9535,7 @@
    "instagram": "https://www.instagram.com/ebrpl/",
    "sponsor_url": "https://batonrouge.makerfaire.com/sponsors/",
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-bay-area",
@@ -9592,7 +9640,7 @@
    "contact_email": null,
    "instagram": "https://www.instagram.com/btxspacefest/",
    "sponsor_url": "https://www.btxspacefest.com/get-involved/vendor-info",
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-brussels",
@@ -9645,7 +9693,7 @@
    "sponsor_url": "https://brussels.makerfaire.com/sponsors/",
    "cfv_url": "https://www.fablabs.brussels/",
    "typical_month": 5,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-buffalo",
@@ -9724,7 +9772,7 @@
    "sponsor_url": "https://calais.makerfaire.com/call-for-makers/",
    "typical_month": 9,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-calgary",
@@ -9767,7 +9815,7 @@
    "instagram": "https://www.instagram.com/makerfaire.calgary/",
    "sponsor_url": "https://calgary.makerfaire.com/sponsors/",
    "typical_month": 5,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-caserta",
@@ -9811,7 +9859,7 @@
    "sponsor_url": "https://caserta.makerfaire.com/diventa-sponsor/",
    "typical_month": 5,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-chisinau",
@@ -9862,7 +9910,7 @@
    "youtube": "https://www.youtube.com/@youthmakerclub5250",
    "sponsor_url": "https://chisinau.makerfaire.com/partners/",
    "typical_month": 6,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-coney-island",
@@ -9916,7 +9964,7 @@
    "sponsor_url": "https://coneyisland.makerfaire.com/2026-sponsor-interest-form/",
    "last_verified": "2026-09-23",
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-curitiba",
@@ -9958,7 +10006,7 @@
    "youtube": "https://www.youtube.com/@MakerFaireCuritiba",
    "cfv_url": "https://dccircuitlabs.com",
    "typical_month": 9,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-daytona",
@@ -9992,7 +10040,7 @@
    "lon": -81.0289673,
    "description": "Mini Maker Faire",
    "typical_month": 10,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-delft",
@@ -10044,7 +10092,7 @@
    "sponsor_url": "https://delft.makerfaire.com/partners/",
    "typical_month": 5,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-des-moines",
@@ -10098,7 +10146,7 @@
    "cfv_url": "https://desmoines.makerfaire.com/2026/03/24/2026-workshops-des-moines-mini-maker-faire/",
    "typical_month": 4,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-downtown-columbia",
@@ -10141,7 +10189,7 @@
    "description": "Mini Maker Faire",
    "typical_month": 10,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-edmonton",
@@ -10193,7 +10241,7 @@
    "sponsor_url": "https://edmonton.makerfaire.com/makers-exhibits/",
    "typical_month": 7,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-electric-city",
@@ -10238,7 +10286,7 @@
    "sponsor_url": "https://electriccity.makerfaire.com/become-a-sponsor/",
    "typical_month": 10,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-fort-worth",
@@ -10379,7 +10427,7 @@
    "sponsor_url": "https://guangzhou.makerfaire.com/become-a-sponsor/",
    "typical_month": 10,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-hannover",
@@ -10485,7 +10533,7 @@
    "sponsor_url": "https://happyvalley.makerfaire.com/maker-exhibits/",
    "typical_month": 10,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-hawthorne",
@@ -10534,7 +10582,7 @@
    "youtube": "https://www.youtube.com/@hawthornehighschool2416",
    "sponsor_url": "https://docs.google.com/forms/d/e/1FAIpQLSeqEB7MQ3pC03WUUFxAIpiu7dkJeTiWRJcrMePQGQGS6yf8bg/viewform?usp=header",
    "typical_month": 5,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-kyoto",
@@ -10577,7 +10625,7 @@
    "sponsor_url": "https://makezine.jp/blog/2026/03/mft_2026_workshop_partner.html",
    "cfv_url": "https://makezine.jp/blog/2026/03/mft_2026_workshop_partner.html",
    "typical_month": 4,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-lake-county",
@@ -10605,10 +10653,11 @@
     {
      "year": 2027,
      "deadlines": [],
-     "source": "estimated from previous year",
+     "source": "makerfaire.com",
      "start_date": "2027-04-17",
-     "dates_status": "estimated",
-     "notes": "Estimated: same weekend as 2026 (2026-04-18). Confirm on the website."
+     "dates_status": "announced",
+     "notes": null,
+     "last_verified": "2026-11-23"
     }
    ],
    "source": "spreadsheet",
@@ -10787,7 +10836,7 @@
    "instagram": "https://www.instagram.com/makerfairelouisville/",
    "sponsor_url": "https://louisville.makerfaire.com/makers-exhibits-2026/",
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-lynchbur",
@@ -10857,7 +10906,7 @@
    "sponsor_url": "https://make.co/partner/",
    "typical_month": 10,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-meridian",
@@ -10899,7 +10948,7 @@
    "twitter": "https://x.com/makerfaire",
    "instagram": "https://instagram.com/makerfaire",
    "sponsor_url": "https://meridian.makerfaire.com/2024-makers-exhibits/",
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-miami",
@@ -10953,7 +11002,7 @@
    "sponsor_url": "https://miami.makerfaire.com/maker-faire-miami-home/makers-exhibits/",
    "typical_month": 4,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-minden-l-bbecke",
@@ -11000,7 +11049,7 @@
    "cfp_email": null,
    "contact_email": null,
    "typical_month": 5,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-nw-arkansas",
@@ -11052,7 +11101,7 @@
    "sponsor_url": "https://nwa.makerfaire.com/become-a-sponsor/",
    "typical_month": 9,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-orange-county",
@@ -11170,7 +11219,7 @@
    "sponsor_url": "https://www.makerfaireorlando.com/exhibits/",
    "cfv_url": "https://www.makerfaireorlando.com/exhibits/categories/hands-on-workshop/",
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-paris",
@@ -11215,7 +11264,7 @@
    "youtube": "https://www.youtube.com/channel/UCtjPHiUM41RcPzdBrN7TEzQ/featured",
    "sponsor_url": "https://paris.makerfaire.com/decouvrez-les-makers-exposants-maker-faire-paris-2026/",
    "typical_month": 4,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-philadelphia",
@@ -11275,7 +11324,7 @@
      "ctx": "2018 Makers Get involved today! Cherry Street Pier Sunday, April 18, 2027 Previous Next What is Maker Faire? Maker Faire is a gatheri"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-porto",
@@ -11320,7 +11369,7 @@
    "cfv_url": "https://makerfaireporto.com/",
    "typical_month": 9,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-rochester",
@@ -11351,6 +11400,14 @@
      "start_date": "2026-11-21",
      "dates_status": "announced",
      "last_verified": "2026-09-23"
+    },
+    {
+     "year": 2027,
+     "deadlines": [],
+     "source": "estimated from previous year",
+     "start_date": "2027-11-20",
+     "dates_status": "estimated",
+     "notes": "Estimated: same weekend as 2026 (2026-11-21). Confirm on the website."
     }
    ],
    "lat": 43.156261,
@@ -11362,7 +11419,14 @@
    "discord_url": "https://discord.gg/mpBkj2hhJ4",
    "twitter": "https://twitter.com/MakerFaireRoc",
    "instagram": "https://www.instagram.com/makerfaireroc/",
-   "sponsor_url": "https://rochester.makerfaire.com/makers-and-exhibits-2025/"
+   "sponsor_url": "https://rochester.makerfaire.com/makers-and-exhibits-2025/",
+   "date_hints": [
+    {
+     "date": "November 21st, 2026",
+     "ctx": "hibits 2017 Makers and Exhibits 2016 RIT Gordon Field House November 21st, 2026 Tickets Available Now Previous Next Grab Your Tickets Today"
+    }
+   ],
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-rocklin",
@@ -11414,7 +11478,7 @@
    "sponsor_url": "https://rocklin.makerfaire.com/sponsors/",
    "typical_month": 10,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-san-jose",
@@ -11453,7 +11517,7 @@
    "lat": 37.3382,
    "lon": -121.8863,
    "typical_month": 6,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-sarajevo",
@@ -11504,7 +11568,7 @@
    "instagram": "https://instagram.com/fablab_sarajevo",
    "sponsor_url": "https://sarajevo.makerfaire.com/sponsors2023/",
    "typical_month": 6,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-sardinia",
@@ -11548,7 +11612,7 @@
    "sponsor_docs_url": "https://sardinia.makerfaire.com/wp-content/uploads/sites/330/2026/03/MAKER-FAIRE-SARDINIA-2026-SPONSORSHIP-PACKAGE.pdf",
    "typical_month": 5,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-se-minnesota",
@@ -11621,7 +11685,7 @@
    "cfp_email": null,
    "contact_email": null,
    "typical_month": 9,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-solothurn",
@@ -11672,7 +11736,7 @@
    "sponsor_url": "https://makerfaire.ch/makerfaire-schweiz-ein-event-wie-kein-anderes/aussteller-faq-exhibitor-faq/",
    "cfv_url": "https://makerfaire.ch/1d-pong-loetworkshop/",
    "typical_month": 6,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-syracuse",
@@ -11727,7 +11791,7 @@
    "sponsor_docs_url": "http://syracuse.makerfaire.com/wp-content/uploads/sites/307/2026/01/Maker26-linkBrochure.pdf",
    "typical_month": 5,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-tokyo",
@@ -11779,7 +11843,7 @@
    "sponsor_url": "https://makezine.jp/event/mft2025/for_sponsors/",
    "sponsor_docs_url": "https://makezine.jp/wp-content/themes/makerfairetokyo/mft2025/pdf/web_MFT2025_sponsors_application.pdf",
    "typical_month": 9,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-trieste",
@@ -11886,7 +11950,7 @@
    "sponsor_url": "https://tulsa.makerfaire.com/sponsors/",
    "typical_month": 8,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-vrchlab",
@@ -11927,7 +11991,7 @@
    "instagram": "https://www.instagram.com/makerfaire.cz/",
    "sponsor_url": "https://makerfaire.cz/partner/",
    "typical_month": 6,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-waterloo",
@@ -11968,7 +12032,7 @@
    "instagram": "https://www.instagram.com/waterloomakerfaire/",
    "sponsor_url": "https://www.waterloomakerfaire.org/sponsors",
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-wuppertal",
@@ -12016,7 +12080,7 @@
    "instagram": "https://www.instagram.com/makemagazinde/",
    "youtube": "https://www.youtube.com/c/makemagazinde",
    "typical_month": 6,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "maker-faire-yukon",
@@ -12056,7 +12120,7 @@
    "instagram": "https://www.instagram.com/virsa_crafts/",
    "sponsor_url": "https://makerfaireyukon.com/exhibitors/",
    "typical_month": 8,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "naclcon",
@@ -12106,7 +12170,7 @@
    "lat": 34.0351727,
    "lon": -77.8935966,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -12160,7 +12224,7 @@
    "verification_notes": "nahamcon.com only says 'back in 2026' with no date yet (2026-09-23).",
    "last_verified": "2026-09-23",
    "typical_month": 12,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "nolacon",
@@ -12210,7 +12274,7 @@
    "lon": -90.0715,
    "typical_month": 5,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -12426,7 +12490,7 @@
    "verification_notes": "Location moves each year; 2026 was May 23-24 at TU Berlin. 2027 location not announced (2026-09-23).",
    "last_verified": "2026-09-23",
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "open-sauce",
@@ -12586,7 +12650,7 @@
    "cfv_url": "https://pancakescon.com/villages-2/",
    "last_verified": "2026-09-23",
    "typical_month": 9,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "pumpcon",
@@ -12640,7 +12704,7 @@
    "lat": 39.9526,
    "lon": -75.1652,
    "type": "hacker",
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "queen-city-con",
@@ -12700,7 +12764,7 @@
    "lon": -84.512,
    "type": "hacker",
    "typical_month": 11,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "recon",
@@ -12857,7 +12921,7 @@
    "lon": -80.8431,
    "type": "hacker",
    "typical_month": 10,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "rvasec",
@@ -12910,7 +12974,7 @@
      "ctx": "ent Conference Yes, RVAsec 16 is happening. Save the dates. June 9-10, 2027 After 15 years, we weren’t quite ready to call it. We’ll se"
     }
    ],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -12980,7 +13044,7 @@
    "lon": -111.6587085,
    "type": "hacker",
    "typical_month": 10,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "sechealth",
@@ -13069,7 +13133,7 @@
    "lon": 18.0686,
    "typical_month": 9,
    "type": "hacker",
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "secretcon",
@@ -13213,7 +13277,7 @@
      "ctx": "RE. CONNECT. Security Fest is ON at Elite Park Avenue Hotel May 27-28, 2027 ! Watch previous years' recordings on YouTube Prepare for t"
     }
    ],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -13266,7 +13330,7 @@
    "last_verified": "2026-09-23",
    "lat": 34.0522,
    "lon": -118.2437,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "shmoocon",
@@ -13376,7 +13440,7 @@
    "cfp_url": "https://gerald.media",
    "online": 1,
    "last_verified": "2026-09-23",
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "sleuthcon",
@@ -13438,7 +13502,7 @@
    "lon": -77.091,
    "typical_month": 6,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -13491,11 +13555,11 @@
    "typical_month": 11,
    "date_hints": [
     {
-     "date": "October 26-27, 2027",
-     "ctx": "ser here SpiceWorld 2027 returns to Austin Tentative dates: October 26-27, 2027* *Subject to change Boost your tech-savvy across key IT top"
+     "date": "November 2-4, 2027",
+     "ctx": "ster Now SpiceWorld 2027 returns to Austin Tentative dates: November 2-4, 2027* *Subject to change Boost your tech-savvy across key IT top"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "steelcon",
@@ -13539,7 +13603,7 @@
    "lat": 53.3811,
    "lon": -1.4701,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "summercon",
@@ -13605,7 +13669,7 @@
    "lat": 40.7128,
    "lon": -74.006,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "teardown",
@@ -13711,7 +13775,7 @@
    "lon": -97.1384,
    "type": "hacker",
    "typical_month": 11,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "thotcon",
@@ -13821,7 +13885,7 @@
    "last_verified": "2026-09-23",
    "lat": 38.953282,
    "lon": -77.3464516,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "toorcamp",
@@ -13863,7 +13927,7 @@
    "lon": -122.7809801,
    "typical_month": 6,
    "date_hints": [],
-   "hints_checked": "2026-11-16",
+   "hints_checked": "2026-11-23",
    "type": "hacker"
   },
   {
@@ -13928,7 +13992,7 @@
    "last_verified": "2026-09-23",
    "lat": 40.4406,
    "lon": -79.9959,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "troopers",
@@ -13944,7 +14008,7 @@
        "label": null,
        "due_date": "2027-03-31",
        "status": "open",
-       "url": null,
+       "url": "https://cfp.troopers.de/tr27-cfp/cfp",
        "notes": null
       }
      ],
@@ -13973,7 +14037,9 @@
    "verification_notes": "TROOPERS27: trainings June 21-22, conference June 23-25, CFP closes March 31, 2027 (troopers.de, 2026-09-23).",
    "last_verified": "2026-09-23",
    "lat": 49.4093582,
-   "lon": 8.694724
+   "lon": 8.694724,
+   "twitter": "@WEareTROOPERS",
+   "cfp_url": "https://cfp.troopers.de/tr27-cfp/cfp"
   },
   {
    "slug": "uybhys",
@@ -14040,11 +14106,11 @@
    "typical_month": 11,
    "date_hints": [
     {
-     "date": "2026-11-14",
-     "ctx": "Devenir sponsor → Actualités MERCI UYBHYS-CTRL · BREST NODE 2026-11-14 🦖 Merci à toutes et à tous UYBHYS 2026 s’est tenu les 6 et"
+     "date": "2026-11-20",
+     "ctx": "Devenir sponsor → Actualités MERCI UYBHYS-CTRL · BREST NODE 2026-11-20 🎬 Nos sponsors, en vidéo Les sponsors et les soutiens d’UYB"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "vcf-east",
@@ -14093,14 +14159,18 @@
    "date_hints": [
     {
      "date": "Apr 2-4, 2027",
-     "ctx": "r: Upcoming Events VCF Montréal = Nov. 7-8, 2026 VCF East = Apr 2-4, 2027 VCF West = Jul 31-Aug 1, 2027 The Vintage Computer Federati"
+     "ctx": "rs Contact Us Search Search for: Upcoming Events VCF East = Apr 2-4, 2027 VCF West = Jul 31-Aug 1, 2027 VCF Montréal = Nov. 6-7, 2027"
     },
     {
      "date": "Jul 31-Aug 1, 2027",
-     "ctx": "ntréal = Nov. 7-8, 2026 VCF East = Apr 2-4, 2027 VCF West = Jul 31-Aug 1, 2027 The Vintage Computer Federation is a 501(c)(3) non-profit w"
+     "ctx": "ch for: Upcoming Events VCF East = Apr 2-4, 2027 VCF West = Jul 31-Aug 1, 2027 VCF Montréal = Nov. 6-7, 2027 The Vintage Computer Federati"
+    },
+    {
+     "date": "Nov. 6-7, 2027",
+     "ctx": "Apr 2-4, 2027 VCF West = Jul 31-Aug 1, 2027 VCF Montréal = Nov. 6-7, 2027 The Vintage Computer Federation is a 501(c)(3) non-profit w"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "vcf-midwest",
@@ -14147,7 +14217,7 @@
    "lat": 42.0333608,
    "lon": -88.083406,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "vcf-southeast",
@@ -14281,14 +14351,18 @@
    "date_hints": [
     {
      "date": "Apr 2-4, 2027",
-     "ctx": "r: Upcoming Events VCF Montréal = Nov. 7-8, 2026 VCF East = Apr 2-4, 2027 VCF West = Jul 31-Aug 1, 2027 The Vintage Computer Federati"
+     "ctx": "rs Contact Us Search Search for: Upcoming Events VCF East = Apr 2-4, 2027 VCF West = Jul 31-Aug 1, 2027 VCF Montréal = Nov. 6-7, 2027"
     },
     {
      "date": "Jul 31-Aug 1, 2027",
-     "ctx": "ntréal = Nov. 7-8, 2026 VCF East = Apr 2-4, 2027 VCF West = Jul 31-Aug 1, 2027 The Vintage Computer Federation is a 501(c)(3) non-profit w"
+     "ctx": "ch for: Upcoming Events VCF East = Apr 2-4, 2027 VCF West = Jul 31-Aug 1, 2027 VCF Montréal = Nov. 6-7, 2027 The Vintage Computer Federati"
+    },
+    {
+     "date": "Nov. 6-7, 2027",
+     "ctx": "Apr 2-4, 2027 VCF West = Jul 31-Aug 1, 2027 VCF Montréal = Nov. 6-7, 2027 The Vintage Computer Federation is a 501(c)(3) non-profit w"
     }
    ],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "wiccon",
@@ -14351,7 +14425,7 @@
    "lon": 4.6462,
    "type": "hacker",
    "typical_month": 10,
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "wwhf-deadwood",
@@ -14403,7 +14477,7 @@
    "lat": 44.3767,
    "lon": -103.7296,
    "date_hints": [],
-   "hints_checked": "2026-11-16"
+   "hints_checked": "2026-11-23"
   },
   {
    "slug": "wwhf-mile-high",
